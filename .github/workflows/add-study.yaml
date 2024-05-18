@@ -1,0 +1,124 @@
+# ------------------------------------------------------------------------------
+# GitHub Actions Workflow: Add Study
+# This workflow is triggered manually to create new folders in Synapse based on
+# a Jira ticket ID. It sets up the environment, installs necessary dependencies,
+# validates inputs, runs a script to create the study folders, sets annotations,
+# updates the folder's wiki page descriptions, and notifies stakeholders on the
+# same Jira ticket with the Synapse ID URL.
+# ------------------------------------------------------------------------------
+
+name: Add Study
+
+on:
+  workflow_dispatch:
+    inputs:
+      jira_ticket:
+        description: "Enter the Jira ticket ID"
+        required: true
+        type: string
+      parent_id:
+        description: "Enter the Synapse ID where new folders will be created"
+        required: true
+        type: string
+        default: "https://www.synapse.org/#!Synapse:syn5550383" # Default Synapse ID
+
+jobs:
+  add-study-structures:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      SYNAPSE_AUTH_TOKEN: ${{ secrets.SYNAPSE_AUTH_TOKEN }}
+      JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+      EMAIL: ${{ secrets.EMAIL }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Poetry and dependencies
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          poetry install --no-interaction --no-root
+        env:
+          VIRTUAL_ENV: .venv
+          POETRY_VIRTUALENVS_IN_PROJECT: "true"
+
+      - name: Create new study folders
+        run: |
+          source .venv/bin/activate
+          SYNAPSE_ID="${{ github.event.inputs.parent_id }}"
+          if [[ ! "$SYNAPSE_ID" =~ ^https://www.synapse.org/#!Synapse:syn[0-9]+$ ]]; then
+            echo "Invalid Synapse ID format. Expected format: https://www.synapse.org/#!Synapse:synXXXXXX"
+            exit 1
+          fi
+          python ./scripts/jira_new_study.py -i ${{ github.event.inputs.jira_ticket }} -p "$SYNAPSE_ID"
+        env:
+          SYNAPSE_AUTH_TOKEN: ${{ secrets.SYNAPSE_AUTH_TOKEN }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          EMAIL: ${{ secrets.EMAIL }}
+
+      - name: Set Synapse annotation
+        run: |
+          source .venv/bin/activate
+          python -c "
+import synapseclient
+import logging
+
+logging.basicConfig(level=logging.INFO)
+try:
+    syn = synapseclient.Synapse()
+    syn.login(authToken='${{ secrets.SYNAPSE_AUTH_TOKEN }}')
+    syn.setAnnotations('${{ github.event.inputs.parent_id }}', {'contentType': 'dataset'})
+    logging.info('Annotation set successfully')
+except Exception as e:
+    logging.error(f'Failed to set annotation: {e}')
+    raise"
+        env:
+          SYNAPSE_AUTH_TOKEN: ${{ secrets.SYNAPSE_AUTH_TOKEN }}
+
+      - name: Update Synapse wiki
+        run: |
+          source .venv/bin/activate
+          python -c "
+import synapseclient
+import logging
+
+logging.basicConfig(level=logging.INFO)
+try:
+    syn = synapseclient.Synapse()
+    syn.login(authToken='${{ secrets.SYNAPSE_AUTH_TOKEN }}')
+    folder_wiki = syn.getWiki('${{ github.event.inputs.parent_id }}')
+    folder_wiki.markdown = '## Study Folder\\nThis folder contains datasets related to the study.'
+    syn.store(folder_wiki)
+    logging.info('Wiki updated successfully')
+except Exception as e:
+    logging.error(f'Failed to update wiki: {e}')
+    raise"
+        env:
+          SYNAPSE_AUTH_TOKEN: ${{ secrets.SYNAPSE_AUTH_TOKEN }}
+
+      - name: Notify stakeholders on Jira
+        run: |
+          JIRA_TICKET="${{ github.event.inputs.jira_ticket }}"
+          SYNAPSE_URL="${{ github.event.inputs.parent_id }}"
+          COMMENT="The new study folders have been created, annotated, and the wiki updated. You can upload the files at the following URL: $SYNAPSE_URL"
+          curl -X POST -H "Authorization: Bearer $JIRA_TOKEN" -H "Content-Type: application/json" \
+            --data "{ \"body\": \"$COMMENT\" }" \
+            "https://your-jira-instance.atlassian.net/rest/api/3/issue/$JIRA_TICKET/comment"
+        env:
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+
+      - name: Create report
+        run: cat ./create_new_study_results.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: new-study-results
+          path: ./create_new_study_results.md
