@@ -1,0 +1,55 @@
+# ------------------------------------------------------------------------------
+# GitHub Actions Workflow: Update Publications
+# This workflow is triggered manually to update publications based on a grant
+# table ID and create new folders in Synapse. It sets up the environment, installs
+# necessary dependencies, and runs a script to update the publications.
+# ------------------------------------------------------------------------------
+
+name: Update Publications
+                                                                                                                                                         
+# Define the event that triggers this workflow.
+# 'workflow_dispatch' allows the workflow to be triggered manually from the GitHub UI.
+on: 
+  workflow_dispatch: 
+    inputs: 
+      # Input for the grant table ID
+      grant_table_id:
+        description: "Enter the grant table ID" # Description for the input field
+        required: true # This input is mandatory
+        type: string # The type of input is a string
+      
+      # Input for the Synapse parent ID
+      parent_id: 
+        description: "Enter the Synapse ID where new folders will be created" # Description for the input field
+        required: true # This input is mandatory
+        type: string # The type of input is a string
+
+jobs:
+  update-publications: 
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
+      SYNAPSE_AUTH_TOKEN: ${{ secrets.SYNAPSE_AUTH_TOKEN }} # Synapse authentication token
+      JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }} # Jira authentication token
+      EMAIL: ${{ secrets.EMAIL }} # Email for notifications or logging
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Setup Python environment
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10" # Specify Python version
+
+      # Step 3: Install Poetry and dependencies
+      - name: Install Poetry and dependencies
+        run: |
+          # Install Poetry
+          curl -sSL https://install.python-poetry.org | python3 -
+          # Install project dependencies
+          poetry install --no-interaction --no-root
+        env:
+          VIRTUAL_ENV: .venv
