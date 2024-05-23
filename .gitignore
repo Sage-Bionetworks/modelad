@@ -1,3 +1,11 @@
-
-/scripts/temp
-/.vscode
+venv/
+.Rhistory
+.RData
+.Rproj.user/
+.Renviron
+.DS_Store
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+temp
+tmp
