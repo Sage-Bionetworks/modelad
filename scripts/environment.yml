@@ -1,0 +1,18 @@
+name: modelad
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scipy
+  - synapseclient
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-data.table
+  - r-seurat
+  - r-synapser
+  - pip
