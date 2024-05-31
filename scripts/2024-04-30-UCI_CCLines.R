@@ -7,18 +7,30 @@ library(docxtractr)
 library(readxl)
 
 
-
 # scripts/main_script.R
 
 # Source the script containing the function
-source("scripts/convert_xlsx_to_csv.R")
+source("modelad/scripts/convert_xlsx_to_csv.R")
 
-# Example usage of the function
-input_path <- "path/to/your/input_file.xlsx"
-output_path <- "path/to/your/output_file.csv"
-convert_xlsx_to_csv(input_path, output_path)
+# List of input paths
+input_paths <- c(
+  "modelad/data/templates/individual_animal_metadata_template.xlsx",
+  "modelad/data/templates/biospecimen_metadata_template.xlsx",
+  "modelad/data/templates/assay_rnaSeq_metadata_template.xlsx"
+)
 
+# Function to convert xlsx to csv if the csv does not exist
+convert_if_not_exists <- function(input_path) {
+  output_path <- sub("\\.xlsx?$", ".csv", input_path)
+  if (!file.exists(output_path)) {
+    convert_xlsx_to_csv(input_path)
+  } else {
+    message("Output file already exists: ", output_path)
+  }
+}
 
+# Convert each xlsx file to csv if the output file does not exist
+lapply(input_paths, convert_if_not_exists)
 
 
 # Function to download files from Synapse without overwriting existing files
@@ -46,7 +58,7 @@ download_synapse_files <- function(folder_id, study_name, base_path = "modelad/d
 
 # Function to copy content from submitted files to templates
 copy_content_to_template <- function(template_path, submitted_path, output_path) {
-  template <- read_excel(template_path)
+  template <- read_csv(template_path)
   submitted <- read_csv(submitted_path)
 
   # Match columns by name and copy content using dplyr
