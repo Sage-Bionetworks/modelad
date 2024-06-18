@@ -1,7 +1,10 @@
 # study_config.yaml
-# Example configuration to create usable documentation
 
 studyID: "UCI_Apoe-Ch"                     # Unique identifier for the study
+synID: "syn61250684"                       # Synapse ID for the study
+stagingID: "syn61250685"                   # Staging ID
+admID: "https://sagebionetworks.jira.com/browse/ADM-3143"
+adelID: ""
 studyName: "The UCI APOE Christchurch Study"  # Descriptive name of the study
 program: "MODEL-AD"                        # Program under which the study is conducted
 module: "ADKP"                             # Module associated with the study
@@ -12,7 +15,6 @@ institution: "University of California - Irvine"  # Institution conducting the s
 species: "Mouse"                           # Species investigated
 specimenType: "Brain, Blood"               # Tissue or sample type collected
 dataType: "Gene Expression, Immunoassay"   # Methods or assays used
-synID: "syn61250684"                       # Synapse ID for the study
 source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn61250684"  # Source URL
 fundingAgency: "NIA"                       # Funding agency
 
@@ -20,5 +22,4 @@ fundingAgency: "NIA"                       # Funding agency
 # startDate: "2022-01-01"                  # Start date of the study (YYYY-MM-DD)
 # endDate: "2024-12-31"                    # End date of the study (YYYY-MM-DD)
 # numberOfSubjects: 100                    # Number of subjects in the study
-# phenotype: "AD-like"                     # Phenotype being studied
 # publication: "10.1234/example.doi"       # DOI of related publication
