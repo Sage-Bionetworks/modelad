@@ -1,0 +1,24 @@
+# study_config.yaml
+# Example configuration to create usable documentation
+
+studyID: "UCI_Apoe-Ch"                     # Unique identifier for the study
+studyName: "The UCI APOE Christchurch Study"  # Descriptive name of the study
+program: "MODEL-AD"                        # Program under which the study is conducted
+module: "ADKP"                             # Module associated with the study
+studyFocus: "Alzheimer Disease"            # Focus area of the study
+grantNumber: "U54AG054349"                 # Grant number
+leadPI: "UCI_TMF"                          # Name of the Principal Investigator or Group
+institution: "University of California - Irvine"  # Institution conducting the study
+species: "Mouse"                           # Species investigated
+specimenType: "Brain, Blood"               # Tissue or sample type collected
+dataType: "Gene Expression, Immunoassay"   # Methods or assays used
+synID: "syn61250684"                       # Synapse ID for the study
+source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn61250684"  # Source URL
+fundingAgency: "NIA"                       # Funding agency
+
+# Optional features
+# startDate: "2022-01-01"                  # Start date of the study (YYYY-MM-DD)
+# endDate: "2024-12-31"                    # End date of the study (YYYY-MM-DD)
+# numberOfSubjects: 100                    # Number of subjects in the study
+# phenotype: "AD-like"                     # Phenotype being studied
+# publication: "10.1234/example.doi"       # DOI of related publication
