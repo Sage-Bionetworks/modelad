@@ -15,6 +15,13 @@ dataType: "Gene Expression, Immunoassay"   # Methods or assays used
 synID: "syn51713891"                       # Synapse ID for the study
 source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn51713891"  # Source URL
 fundingAgency: "NIA"                       # Funding agency
+fileviewName: "MODEL-AD_UCI_CCLines"
+parentID: "syn2580853"
+scopeID: 
+  # - "syn51713902" # data 1
+  # - "syn58841752" # data 2
+  - "syn51713897" # metadata
+  - "syn53606335" # comparison - abca7 data 1
 
 # Optional features
 # startDate: "2022-01-01"                  # Start date of the study (YYYY-MM-DD)
