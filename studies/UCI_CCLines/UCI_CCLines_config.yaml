@@ -1,0 +1,17 @@
+study_id: "UCI_CCLines"            # Unique identifier for the study
+study_name: "The UCI Collaborative Cross Lines Study"        # Descriptive name of the study
+module: "ADKP"
+studyFocus: "Alzheimer Disease"
+consortium: "MODEL-AD"
+grantNumber: "U54AG054349"              # Grant number
+leadPI: "UCI_TMF"                 # Name of the Principal Investigator or Group
+institution: "University of California - Irvine"      # Institution conducting the study
+species: "Mouse"                       # what type of  Species is measured
+specimenType: "Brain, Blood" # what is being measured
+dataType: "Gene Expression, Immunoassay"                   # what types of assays performed
+synID: "syn51713891" # DCC will create and set permissions
+source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn51713891"
+# fundingAgency: "NIA"                   # Source of funding
+# grantStartDate: "2024-01-01"           # Start date of the study (YYYY-MM-DD)
+# grantEndDate: "2028-12-31"             # Expected end date of the study (YYYY-MM-DD)
+# publication: "10.1234/example.doi"     # DOI of related publication
