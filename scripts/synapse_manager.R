@@ -1,16 +1,15 @@
+# Load necessary libraries
 library(synapser)
 library(dplyr)
 library(readr)
 library(janitor)
+library(yaml)
 
+# Define SynapseManager class
 SynapseManager <- setRefClass(
-  "SynapseManager",
-  fields = list(syn = "ANY"),
+  "synMgr",
   methods = list(
-    initialize = function() {
-      synLogin()
-      syn <<- synGet()
-    },
+    initialize = function() synLogin(),
 
     createFileviewSchema = function(name, parentId, scopeId) {
       schema <- EntityViewSchema(
@@ -21,39 +20,24 @@ SynapseManager <- setRefClass(
         addDefaultViewColumns = TRUE,
         addAnnotationColumns = FALSE
       )
-      fileview <- synStore(schema)
-      return(fileview$properties$id)
+      synStore(schema)$properties$id
     },
 
     queryFileview = function(fileviewId) {
       query_result <- synTableQuery(paste("SELECT * FROM", fileviewId))
-      df <- read_csv(query_result$filepath)
-      return(df)
+      read_csv(query_result$filepath) %>% clean_names()
     },
 
-    removeColumns = function(df, startCol, endCol) {
-      df <- df %>% select(-c(startCol:endCol))
-      return(df)
+    download_metadata = function(fileview_id) {
+      query_result <- synTableQuery(paste("SELECT * FROM", fileview_id))
+      read_csv(query_result$filepath) %>% clean_names()
     },
 
-    read_and_preprocess = function(synId) {
-      df <- read_csv(synGet(synId)$path) %>%
-        mutate(across(where(is.character), as.character)) %>%
-        remove_empty(c("rows", "cols"))
-      return(df)
+    upload_metadata = function(fileview_id, metadata_df) {
+      table_final <- Table(fileview_id, metadata_df)
+      synStore(table_final)
     },
 
-    coalesce_join = function(original, update, by) {
-      joined <- full_join(original, update, by = by, suffix = c(".x", ".y"))
-      colnames <- union(names(original), names(update))
-
-      for (col in colnames) {
-        if (paste0(col, ".x") %in% names(joined) & paste0(col, ".y") %in% names(joined)) {
-          joined[[col]] <- coalesce(joined[[paste0(col, ".x")]], joined[[paste0(col, ".y")]])
-          joined <- joined %>% select(-c(paste0(col, ".x"), paste0(col, ".y")))
-        }
-      }
-      return(joined)
-    }
+    read_config = function(config_path) yaml::read_yaml(config_path)
   )
 )
