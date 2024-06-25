@@ -18,14 +18,14 @@ fundingAgency: "NIA"                       # Funding agency
 fileviewName: "MODEL-AD_UCI_CCLines"
 parentID: "syn2580853"
 scopeID: 
-  # - "syn51713902" # data 1
-  # - "syn58841752" # data 2
+  - "syn51713891" # UCI_CCLines
   - "syn51713897" # metadata
-  - "syn53606335" # comparison - abca7 data 1
+  - "syn51713902" # data 1
+  # - "syn58841752" # data 2
+  - "syn27207345" # UCI_ABCA7
+  - "syn27207357" # abca7 metadata
+  # - "syn53606335" # comparison - abca7 data 1
+  # - "syn53616447" # comparison - abca7 data 2
 
 # Optional features
-# startDate: "2022-01-01"                  # Start date of the study (YYYY-MM-DD)
-# endDate: "2024-12-31"                    # End date of the study (YYYY-MM-DD)
-# numberOfSubjects: 100                    # Number of subjects in the study
-# phenotype: "AD-like"                     # Phenotype being studied
 # publication: "10.1234/example.doi"       # DOI of related publication
