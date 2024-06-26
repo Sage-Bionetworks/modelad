@@ -1,12 +1,14 @@
 # study_config.yaml
 # Example configuration to create usable documentation
-
+adelID: https://sagebionetworks.jira.com/servicedesk/customer/portal/12/ADEL-261
+admID: https://sagebionetworks.jira.com/browse/ADM-2659
+studyConfig: "https://github.com/Sage-Bionetworks/modelad/tree/main/studies/Jax.IU.Pitt_LOAD2.PrimaryScreen"
 studyID: "Jax.IU.Pitt_LOAD2.PrimaryScreen" # Unique identifier for the study
 studyName: "The Jax.IU.Pitt LOAD2 PrimaryScreen Study"  # Descriptive name of the study
 program: "MODEL-AD"                        # Program under which the study is conducted
 module: "ADKP"                             # Module associated with the study
 studyFocus: "Alzheimer Disease"            # Focus area of the study
-grantNumber: ""                 # Grant number
+grantNumber: "U54AG054345"                 # Grant number
 leadPI: "Greg Carter"                          # Name of the Principal Investigator or Group
 institution: "Jackson Labs"  # Institution conducting the study
 species: "Mouse"                           # Species investigated
