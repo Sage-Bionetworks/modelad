@@ -1,26 +1,37 @@
-# study_config.yaml
-# Example configuration to create usable documentation
-adelID: https://sagebionetworks.jira.com/servicedesk/customer/portal/12/ADEL-261
-admID: https://sagebionetworks.jira.com/browse/ADM-2659
-studyConfig: "https://github.com/Sage-Bionetworks/modelad/tree/main/studies/Jax.IU.Pitt_LOAD2.PrimaryScreen"
-studyID: "Jax.IU.Pitt_LOAD2.PrimaryScreen" # Unique identifier for the study
-studyName: "The Jax.IU.Pitt LOAD2 PrimaryScreen Study"  # Descriptive name of the study
-program: "MODEL-AD"                        # Program under which the study is conducted
-module: "ADKP"                             # Module associated with the study
-studyFocus: "Alzheimer Disease"            # Focus area of the study
-grantNumber: "U54AG054345"                 # Grant number
-leadPI: "Greg Carter"                          # Name of the Principal Investigator or Group
-institution: "Jackson Labs"  # Institution conducting the study
-species: "Mouse"                           # Species investigated
-specimenType: "Brain, Blood"               # Tissue or sample type collected
-dataType: "Gene Expression"   # Methods or assays used
-synID: "syn58863147"                       # Synapse ID for the study
-source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn58863147"  # Source URL
-fundingAgency: "NIA"                       # Funding agency
+# Study Identifiers
+adelID: "https://sagebionetworks.jira.com/servicedesk/customer/portal/12/ADEL-261"
+admID: "https://sagebionetworks.jira.com/browse/ADM-2659"
+studyID: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
 
-# Optional features
-# startDate: "2022-01-01"                  # Start date of the study (YYYY-MM-DD)
-# endDate: "2024-12-31"                    # End date of the study (YYYY-MM-DD)
-# numberOfSubjects: 100                    # Number of subjects in the study
-# phenotype: "AD-like"                     # Phenotype being studied
-# publication: "10.1234/example.doi"       # DOI of related publication
+# Study Details
+studyName: "The Jax.IU.Pitt LOAD2 PrimaryScreen Study"
+program: "MODEL-AD"
+module: "ADKP"
+studyFocus: "Alzheimer Disease"
+grantNumber: "U54 AG054345"
+leadPI: "Bruce Lamb"
+institution: "Indiana University School of Medicine"
+species: "Mouse"
+specimenType: "Brain, Blood"
+dataType: "Gene Expression"
+synID: "syn58863147"
+source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn58863147"
+fundingAgency: "NIA"
+
+# Data Liaison Information
+dataLiaisonName: "Catrina Spruce"
+dataLiaisonEmail: "catrina.spruce@jax.org"
+
+# Study Information
+existingStudy: "No"
+dataSurveyInventory: "" # Insert synID or link to external documentation
+synapseProjectDCA: "" # Provide Synapse Project for DCA
+stagingSynID: "syn58863153"
+dataReleaseDate: "" # Provide in format # Month YEAR
+manuscriptIssue: "" # Provide if applicable
+additionalNotes: "" # Internal DCC notes
+cohortSource: "" # Provide if applicable
+
+# Optional Features
+# citation: "10.1234/example.doi"
+
