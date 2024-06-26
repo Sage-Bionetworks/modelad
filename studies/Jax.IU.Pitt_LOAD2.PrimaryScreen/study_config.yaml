@@ -14,24 +14,43 @@ institution: "Indiana University School of Medicine"
 species: "Mouse"
 specimenType: "Brain, Blood"
 dataType: "Gene Expression"
-synID: "syn58863147"
-source: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn58863147"
 fundingAgency: "NIA"
 
 # Data Liaison Information
 dataLiaisonName: "Catrina Spruce"
 dataLiaisonEmail: "catrina.spruce@jax.org"
 
+# Synapse Information
+synIDs:
+  study: "syn58863147"
+  staging: "syn58863153"
+  dataSurveyInventory: "" # Insert synID or link to external documentation
+  projectDCA: "" # Provide Synapse Project for DCA
+
+# Metadata Synapse IDs
+metadata:
+  general: "syn59479679"
+  individual: "syn53282594"
+  biospecimen: "syn53282599"
+
+# Assay-Specific Synapse IDs
+assays:
+  RNASeq:
+    raw_data: "syn59479899"
+    processed_data: "syn59479678"
+    metadata: "syn53710873" # Add metadata Synapse ID if available
+  Proteomics:
+    raw_data: ""
+    processed_data: ""
+    metadata: ""
+  Metabolomics:
+    raw_data: ""
+    processed_data: ""
+    metadata: ""
+  Imaging:
+    raw_data: ""
+    processed_data: ""
+    metadata: ""
+
 # Study Information
 existingStudy: "No"
-dataSurveyInventory: "" # Insert synID or link to external documentation
-synapseProjectDCA: "" # Provide Synapse Project for DCA
-stagingSynID: "syn58863153"
-dataReleaseDate: "" # Provide in format # Month YEAR
-manuscriptIssue: "" # Provide if applicable
-additionalNotes: "" # Internal DCC notes
-cohortSource: "" # Provide if applicable
-
-# Optional Features
-# citation: "10.1234/example.doi"
-
