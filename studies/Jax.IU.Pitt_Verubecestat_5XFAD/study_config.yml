@@ -1,0 +1,45 @@
+# Study Identifiers
+adelID: "https://sagebionetworks.jira.com/browse/ADEL-31"
+admID: "https://sagebionetworks.jira.com/browse/ADM-119"
+studyID: "JAX.IU.PITT_Verubecestat_5XFAD"
+
+# Study Details
+studyName: "The JAX.IU.PITT_Verubecestat_5XFAD Study"
+program: "MODEL-AD"
+module: "ADKP"
+studyFocus: "Alzheimer Disease"
+grantNumber: "U54AG054345"
+leadPI: "Greg Carter"
+institution: "Jackson Labs"
+species: "Mouse"
+specimenType: "Brain, Blood"
+dataType: "Gene Expression"
+fundingAgency: "NIA"
+
+# Data Liaison Information
+dataLiaisonName: "Catrina Spruce"
+dataLiaisonEmail: "catrina.spruce@jax.org"
+
+# Synapse Information
+synIDs:
+  study: "syn21863375"
+  staging: "syn23628033"
+  dataSurveyInventory: "" # Insert synID or link to external documentation
+  projectDCA: "" # Provide Synapse Project for DCA
+
+# Metadata Synapse IDs
+metadata:
+  general: "syn21863391"
+  individual: "syn22251788"
+  biospecimen: "syn26136407"
+
+# Assay-Specific Synapse IDs
+assays:
+  Proteomics:
+    raw_data: ""
+    processed_data: "syn52805920"
+    metadata: ""
+
+
+# Study Information
+existingStudy: "True"
