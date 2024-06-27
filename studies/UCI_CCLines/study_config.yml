@@ -27,5 +27,9 @@ scopeID:
   # - "syn53606335" # comparison - abca7 data 1
   # - "syn53616447" # comparison - abca7 data 2
 
+syn53606335, syn53616447,syn53616342
+syn51713902, syn58841752
+
+
 # Optional features
 # publication: "10.1234/example.doi"       # DOI of related publication
