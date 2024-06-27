@@ -38,19 +38,8 @@ assays:
   RNASeq:
     raw_data: "syn59479899"
     processed_data: "syn59479678"
-    metadata: "syn53710873" # Add metadata Synapse ID if available
-  Proteomics:
-    raw_data: ""
-    processed_data: ""
-    metadata: ""
-  Metabolomics:
-    raw_data: ""
-    processed_data: ""
-    metadata: ""
-  Imaging:
-    raw_data: ""
-    processed_data: ""
-    metadata: ""
+    metadata: "syn53710873"
+
 
 # Study Information
 existingStudy: "No"
