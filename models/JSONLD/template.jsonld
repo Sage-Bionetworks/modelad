@@ -1,0 +1,121 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Clinical Study Data",
+    "description": "A dataset containing clinical study information for patients with various conditions.",
+    "identifier": "dataset-001",
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Health Research Institute"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Dr. John Doe"
+    },
+    "attributes": [
+      {
+        "@type": "Attribute",
+        "name": "PatientID",
+        "description": "A unique identifier for each patient.",
+        "required": true,
+        "validValues": null,
+        "dependsOn": null,
+        "properties": null,
+        "parent": null,
+        "source": "http://example.org/ontology/PatientID",
+        "validationRules": ["mustExist", "mustBeUnique"]
+      },
+      {
+        "@type": "Attribute",
+        "name": "Sex",
+        "description": "The sex of the patient.",
+        "required": true,
+        "validValues": ["Female", "Male", "Other"],
+        "dependsOn": null,
+        "properties": null,
+        "parent": null,
+        "source": "http://example.org/ontology/Sex",
+        "validationRules": ["mustExist"]
+      },
+      {
+        "@type": "Attribute",
+        "name": "Age",
+        "description": "The age of the patient.",
+        "required": false,
+        "validValues": null,
+        "dependsOn": null,
+        "properties": null,
+        "parent": null,
+        "source": "http://example.org/ontology/Age",
+        "validationRules": ["mustExist", "mustBeInteger"]
+      },
+      {
+        "@type": "Attribute",
+        "name": "Diagnosis",
+        "description": "The diagnosis of the patient's condition.",
+        "required": false,
+        "validValues": ["Cancer", "Healthy"],
+        "dependsOn": ["Sex", "Age"],
+        "properties": ["Diagnosis Date", "Diagnosis Procedure"],
+        "parent": null,
+        "source": "http://example.org/ontology/Diagnosis",
+        "validationRules": ["mustExist"]
+      },
+      {
+        "@type": "Attribute",
+        "name": "DiagnosisDate",
+        "description": "The date of the diagnosis.",
+        "required": false,
+        "validValues": null,
+        "dependsOn": ["Diagnosis"],
+        "properties": null,
+        "parent": null,
+        "source": "http://example.org/ontology/DiagnosisDate",
+        "validationRules": ["mustExist", "mustBeDate"]
+      },
+      {
+        "@type": "Attribute",
+        "name": "TumorType",
+        "description": "Type of tumor if the diagnosis is cancer.",
+        "required": false,
+        "validValues": ["Brain Cancer", "Lung Cancer"],
+        "dependsOn": ["Diagnosis"],
+        "properties": null,
+        "parent": null,
+        "source": "http://example.org/ontology/TumorType",
+        "validationRules": ["mustExist"]
+      },
+      {
+        "@type": "Attribute",
+        "name": "BrainBiopsySite",
+        "description": "Site of biopsy for brain cancer patients.",
+        "required": false,
+        "validValues": null,
+        "dependsOn": ["TumorType"],
+        "properties": null,
+        "parent": null,
+        "source": "http://example.org/ontology/BrainBiopsySite",
+        "validationRules": ["mustExist"]
+      }
+    ],
+    "conditionalLogic": [
+      {
+        "if": {
+          "Diagnosis": "Cancer"
+        },
+        "then": {
+          "required": ["TumorType", "DiagnosisDate"]
+        }
+      },
+      {
+        "if": {
+          "TumorType": "Brain Cancer"
+        },
+        "then": {
+          "required": ["BrainBiopsySite"]
+        }
+      }
+    ]
+  }
+  
