@@ -1,0 +1,17 @@
+- study: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
+  synID: "syn22086730"
+  synapseURL: "https://www.synapse.org/#!Synapse:syn22086730"
+  stagingURL: "https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn22086730"
+  portalURL: "https://adknowledgeportal.org/studies/Jax.IU.Pitt_LOAD2.PrimaryScreen"
+
+- study: "UCI_ABCA7"
+  synID: "syn27207345"
+  synapseURL: "https://www.synapse.org/#!Synapse:syn27207345"
+  stagingURL: "https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn27207345"
+  portalURL: "https://adknowledgeportal.org/studies/UCI_ABCA7"
+
+- study: "UCI_CCLines"
+  synID: "syn51713891"
+  synapseURL: "https://www.synapse.org/#!Synapse:syn51713891"
+  stagingURL: "https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn51713891"
+  portalURL: "https://adknowledgeportal.org/studies/UCI_CCLines"
