@@ -12,3 +12,5 @@ tmp
 data
 .vscode/
 *.xlsx
+
+models/templates/
