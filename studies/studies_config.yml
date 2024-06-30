@@ -1,3 +1,12 @@
+- study: "MODEL-AD-Example"
+  synID: "syn51713891" fix urls for this study
+  studies/MODEL-AD-Example/study_config.yml
+
+  synapseURL: "https://www.synapse.org/#!Synapse:syn51713891"
+  stagingURL: "https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn51713891"
+  portalURL: "https://adknowledgeportal.org/studies/UCI_CCLines"
+
+
 - study: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
   synID: "syn22086730"
   synapseURL: "https://www.synapse.org/#!Synapse:syn22086730"
