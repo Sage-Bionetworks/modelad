@@ -4,12 +4,25 @@ library(synapser)
 # Authenticate with Synapse
 synLogin()
 
-# Define the Synapse ID of the File View and snapshot comment
+# Define the Synapse ID of the File View
 file_view_id <- "syn11346063"
-snapshot_comment <- "24.6 data release"
+
+# Retrieve the current version number of the file view
+entity <- synGet(file_view_id)
+current_version <- entity$properties$versionNumber
+new_version <- current_version + 1
+
+# Generate the snapshot comment based on the current year and month
+snapshot_comment <- format(Sys.Date(), "%y.%m data release")
+
+# Show what changes will be made
+cat("Creating a snapshot for Synapse ID:", file_view_id, "\n")
+cat("Current version:", current_version, "\n")
+cat("New version:", new_version, "\n")
+cat("Snapshot comment:", snapshot_comment, "\n")
 
 # Create the snapshot using synCreateSnapshotVersion
-snapshot <- synCreateSnapshotVersion(file_view_id, comment = snapshot_comment)
+snapshot <- synCreateSnapshotVersion(entity = file_view_id, snapshotComment = snapshot_comment)
 
 # Print the snapshot details
 print(snapshot)
@@ -26,15 +39,5 @@ doi_details <- list(
 # Get the newly created snapshot version ID
 snapshot_version <- snapshot$versionNumber
 
-# Assign the DOI using synSetAnnotations
-annotations <- list(
-  doi = TRUE,
-  doiTitle = snapshot_comment,
-  doiAuthors = "Sage Bionetworks",
-  doiType = "Collection"
-)
-
-synSetAnnotations(entity = file_view_id, annotations = annotations, version = snapshot_version)
-
 # Print confirmation
-cat("DOI assigned to snapshot version", snapshot_version, "with title:", snapshot_comment, "\n")
+cat("Snapshot created with version", snapshot_version, "and comment:", snapshot_comment, "\n")
