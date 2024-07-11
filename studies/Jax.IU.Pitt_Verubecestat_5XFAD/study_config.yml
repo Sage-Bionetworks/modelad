@@ -10,6 +10,7 @@ study:
   liaison: "Catrina Spruce"
   liaisonEmail: "catrina.spruce@jax.org"
   metadata:
+    general: "syn21863391"
     individual: "syn22251788"
     biospecimen: "syn26136407"
   assays:
