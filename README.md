@@ -18,5 +18,5 @@ The Model-AD curation project is hosted on GitHub: [Model-AD curation project](h
 - [Model-AD Data Portal](https://www.synapse.org/#!Synapse:syn61250673)
 - [Model-AD Website](https://www.model-ad.org/)
 - [Synapse Python Documentation](https://python-docs.synapse.org/)
-- [Synapse R Client GitHub](https://github.com/Sage-Bionetworks/synapser)
 
+- [Synapse R Client GitHub](https://github.com/Sage-Bionetworks/synapser)
