@@ -2,6 +2,7 @@
 library(synapser)
 library(tidyverse)
 library(yaml)
+library(purrr)
 
 # Authenticate with Synapse
 synLogin()
@@ -24,13 +25,9 @@ base_url <- "https://sagebionetworks.jira.com/browse/"
 adel_url <- paste0(base_url, config$study$adelID)
 adm_url <- paste0(base_url, config$study$admID)
 
-# Print the constructed URLs (for verification)
-print(paste("ADEL URL:", adel_url))
-print(paste("ADM URL:", adm_url))
-
 # Extract relevant information from the configuration
 target_folder_id <- config$study$studyID
-metadata_general_id <- config$study$metadata$individual
+metadata_general_id <- config$study$metadata$general
 
 # Create a list of all data_ids from config$study$assays content
 data_ids <- unlist(lapply(config$study$assays, function(assay) assay$data))
@@ -60,11 +57,21 @@ move_and_annotate <- function(data_id, target_folder_id, annotations_list) {
   set_annotations(data_id, annotations_list)
 }
 
+# Function to move a file to another file ID as a new version
+move_file_as_new_version <- function(synIDa, synIDb) {
+  entity_a <- synGet(synIDa, downloadFile = TRUE)
+  entity_b <- synGet(synIDb)
+  entity_b$filePath <- entity_a$path
+  entity_b <- synStore(entity_b)
+}
+
 # Move files to the target folder and set annotations
-walk(data_ids, ~ move_and_annotate(.x, target_folder_id, annotations_list))
+# walk(data_ids, ~move_and_annotate(.x, target_folder_id, annotations_list))
 
 # Move specific file to the target metadata folder
-move_file_to_folder("syn52360061", metadata_general_id)
+a <- synGet("syn52360062", download = TRUE)
+b <- synGet("syn26136407")
+move_file_as_new_version("syn52360062", "syn26136407")
 
 # Download the file view annotations from "Portal - Studies Table"
 file_view_id <- "syn17083367"
