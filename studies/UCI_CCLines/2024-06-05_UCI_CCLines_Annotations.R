@@ -2,11 +2,20 @@ library(synapser)
 library(dplyr)
 library(readr)
 library(janitor)
+library(synapserutils)
 
 # Function to initialize Synapse
 initialize_synapse <- function() {
   synLogin()
 }
+
+
+# download metadata folder
+system("synapse get -r syn51713897")
+
+
+
+
 
 # Function to create a fileview schema
 create_fileview_schema <- function(name, parentId, scopeId) {
