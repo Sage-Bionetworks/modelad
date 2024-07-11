@@ -20,7 +20,13 @@ studies:
     synID: "syn16798076"
 
   - name: "Jax.IU.Pitt_LOAD2"
-    synID: ""
+    synID: "syn51534997"
 
   - name: "MODEL-AD-Example"
     synID: "syn61377081"
+
+  - name: "Jax.IU.Pitt_5XFAD"
+    synID: "syn21983020"
+
+  - name: "UCI_3xTg-AD"
+    synID: "syn22964685"
