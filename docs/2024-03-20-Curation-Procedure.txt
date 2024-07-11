@@ -1,0 +1,136 @@
+Stage 1
+
+
+
+ADD Synapse Study folder: Study_SynID
+
+ADD Synapse Staging folder: Staging_SynID
+
+ADD contributor’s SynID or add their SynID to the appropriate Synapse Team
+
+Synapse Teams [ADD_URL]
+
+GRANT upload permission to the staging folder
+
+REPLY to AD-EL with Upload instructions [ADD_URL]
+
+Upload through the Synapse web interface works well for transferring a few files, but the Synapse CLI client should be used for uploading files in bulk. 
+
+Synapse How-to: https://help.synapse.org/docs/Getting-Started.2055471150.html
+
+Files and Folders:https://help.synapse.org/docs/Quick-Start:-Files-and-Folders.2058846522.html
+
+Upload/Download in Bulk: https://help.synapse.org/docs/Upload-and-Download-Data-in-Bulk.2003796248.html
+
+https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2455437341/Onboarding+Procedures#SUBJECT%3A-MODEL-AD-Metadata-Validation 
+
+CREATE Jira ticket for governance to add Access Restrictions (AR)  (for human data)
+
+In Jira, the ticket component should be "Add, Edit, or Remove Synapse Access Restriction/Click-wrap".
+
+VERIFY all of these restrictions implemented correctly!
+
+
+Stage 2
+
+https://sagebionetworks.jira.com/wiki/spaces/AKP/pages/1057882353/Content+Drivers 
+
+
+
+Study Description
+
+This study provides bulk RNA-seq, immunohistochemistry and biochemistry data of Bin1<em1Aduci> homozygous (Jax stock number: 035872), 5xFAD hemizygous (Jax stock number: 034848), Bin1<em1Aduci> homozygous; 5xFAD hemizygous, and C57BL6/J (Jax stock number: 000664). Neuronal BIN1 localizes to pre-synaptic termini where it functions in excitatory synaptic transmission via regulation of neurotransmitter vesicle dynamics. Mouse Bin1 gene carrying the K426R mutation that corresponds to the SNP (rs138047593) found in human BIN1 that encodes a missense mutation associated with increased risk of sporadic Alzheimer's disease. For clarification purpose, Bin1<em1Aduci> is presented as Bin1-K358R or Bin1K358R under this study.
+
+Public Release Notes: 
+
+Rationale for sharing these data are in Synapse and portal. Highlight the relevance and import clear and accessible language. When should we get this information?
+
+Assay Descriptions
+
+ADD descriptions in for each assay’s wiki page
+
+Acknowledgment Statement
+
+Users of the data will be required to use this statement in publications
+
+The template for writing the acknowledgment statement is here: https://www.synapse.org/#!Synapse:syn25014532
+
+The form to submit the completed statement is here: [ADD_URL]
+
+Stage 3
+
+VERIFY Data Uploaded
+
+SETUP Synapse project for DCA
+
+https://sagebionetworks.jira.com/wiki/spaces/SCHEM/pages/2458648589/Setting+up+a+DCC+Asset+Store#How-do-I-Structure-My-DCC-Synapse-Project-to-Work-with-the-Data-Curator-App%3F
+
+Set dataset
+
+Create fileview for DCA. 
+
+SEND DCA instructions boiler-plate language [ADD_URL] to user in ADEL ticket 
+
+Contributor must submit verified metadata using DCA for each of the following:
+
+Individual
+
+Biospecimen
+
+Assay-specific metadata
+
+VERIFY metadata has been applied to files in Synapse project
+
+VERIFY metadata file version has been updated
+
+
+
+ADD study name to SynapseAnnotations/terms/neuro/study.json
+
+study folder added to data tracking table
+
+
+
+Stage 4
+
+The content in Synapse drives the individual public-facing portals. Thus, it is necessary to edit the following tables.
+
+
+
+UPDATE the following Synapse tables as needed:
+
+Portal - Studies Table | syn17083367 
+
+Portal - Experimental Models | syn22219805
+
+Studies for Validation Apps table ?
+
+AnalysisResultsPerStudy ?
+
+Studies for Validation Apps ?
+
+Acknowledgement Wiki
+
+AD Portal Grant Outputs
+
+ Contributed Donors
+
+Contributed Samples
+
+
+
+WRITE Public release Notes
+
+Request concise summary of the datasets from contributor
+
+VERIFY governance tickets resolved
+
+Governance has added necessary permissions to Data and Staging folders (for human data)
+
+ADD Study URL to Staging Portal
+
+https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn12345678 
+
+VERIFY displayed correctly in portal
+
+COMMUNICATE study ready for release
