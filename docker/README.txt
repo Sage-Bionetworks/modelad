@@ -1,3 +1,4 @@
+# buld image
 docker-compose up --build
-# To stop and remove the containers and images:
+# stop and remove images
 docker-compose down --rmi all

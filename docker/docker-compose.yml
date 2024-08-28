@@ -8,8 +8,8 @@ services:
       - ROOT=TRUE
     volumes: # mount host directories or named volumes into the container.
       - ~/.synapseConfig:/home/rstudio/.synapseConfig
+      - ~/.config/rstudio/rstudio-prefs.json:/home/rstudio/.config/rstudio/rstudio-prefs.json
       - ~/modelad:/home/rstudio/modelad
       - ~/curation:/home/rstudio/curation
-      - ~/.config/rstudio/rstudio-prefs.json:/home/rstudio/.config/rstudio/rstudio-prefs.json
     ports:
       - "8787:8787" # map container port to host port (localhost:8787)
