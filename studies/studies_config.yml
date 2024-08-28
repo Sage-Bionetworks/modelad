@@ -1,32 +1,171 @@
-# studies_config.yml
-# This file links to individual study configuration files for each study in the MODEL-AD project.
-
-config_path_format: "modelad/studies/{name}/study_config.yml"
-
 studies:
-  - name: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
-    synID: "syn22086730"
+  # Pending
+  - name: Jax.IU.Pitt_LOAD1.Diet
+    synID: syn27210656
+    status: pending
+    jira_tickets:
+      - [ADEL-301: Jax.IU.Pitt_LOAD1.Diet](https://jira.sagebionetworks.org/browse/ADEL-301)
+      - [ADM-3228: Related Task for Diet Study](https://jira.sagebionetworks.org/browse/ADM-3228)
 
-  - name: "UCI_ABCA7"
-    synID: "syn27207345"
+  - name: Jax.IU.Pitt_LOAD2
+    synID: syn51534997
+    status: in progress
+    jira_tickets:
+      - [ADEL-327: Jax.IU.Pitt_LOAD2 upload](https://jira.sagebionetworks.org/browse/ADEL-327)
+      - [ADEL-49](https://jira.sagebionetworks.org/browse/ADEL-49)
 
-  - name: "UCI_CCLines"
-    synID: "syn51713891"
+  # Pending studies without Jira ticket URLs
+  - name: Jax.IU.Pitt_APOE4.Trem2.R47H
+    synID: syn17095980
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Add missing brain RNAseq samples to metadata
+          - Correct mismatched specimen IDs in RNAseq assay metadata
+          - Fill missing genotype values in individual metadata
+          - Add missing individual metadata rows for specific brain RNAseq samples
+          - Remove duplicate rows in individual metadata
+          - Standardize genotype labels in individual metadata
+          - Address general problems for RNAseq samples missing in individual/biospecimen metadata
 
-  - name: "Jax.IU.Pitt_Verubecestat_5XFAD"
-    synID: "syn21863375"
+  - name: Jax.IU.Pitt_5XFAD
+    synID: syn21983020
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Correct missing and erroneous date fields in individual metadata
+          - Populate missing "ageDeath" and "ageDeathUnits" in individual metadata
+          - Correct formatting in "sex" column of individual metadata
 
-  - name: "UCI_5XFAD"
-    synID: "syn16798076"
+  - name: UCI_5XFAD
+    synID: syn16798076
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Link assay metadata with biospecimen data
+          - Correct mismatched specimen IDs between assay and biospecimen metadata
+          - Standardize column names in metadata
+          - Remove duplicate rows in biospecimen metadata
 
-  - name: "Jax.IU.Pitt_LOAD2"
-    synID: "syn51534997"
+  - name: UCI_ABCA7
+    synID: syn27207345
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Annotate missing fastq files with "specimenID"
+          - Correct naming inconsistencies between individual ID and specimen ID
+          - Remove blank columns from RNAseq assay metadata
 
-  - name: "MODEL-AD-Example"
-    synID: "syn61377081"
+  - name: UCI_PrimaryScreen
+    synID: syn25316706
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Obtain missing data for specimen "9497rh" in RNAseq assay metadata
+          - Standardize genotype naming in individual metadata
 
-  - name: "Jax.IU.Pitt_5XFAD"
-    synID: "syn21983020"
+  - name: UCI_Trem2-R47H_NSS
+    synID: syn26943950
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Complete missing "sex" and "modelSystemName" entries in individual metadata
 
-  - name: "UCI_3xTg-AD"
-    synID: "syn22964685"
+  - name: UCI_Trem2_Cuprizone
+    synID: syn50670633
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Complete "modelSystemName" entries in individual metadata
+          - Remove extra blank column in RNAseq assay metadata
+
+  - name: UCI_3xTg-AD
+    synID: syn22964685
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Standardize column capitalization in individual metadata
+          - Adjust genotype naming to match MODEL-AD approved values
+          - Remove empty columns in biospecimen metadata
+
+  - name: UCI_hAbeta_KI
+    synID: syn18634479
+    status: pending
+    jira_tickets:
+      - JIRA-000: 
+          - Populate missing biospecimen metadata columns
+          - Correct platform entries in RNAseq assay metadata
+          - Standardize genotype names in individual metadata
+
+  # Done studies with Jira ticket URLs
+  - name: Jax.IU.Pitt_LOAD1.PrimaryScreen
+    synID: syn21595258
+    status: done
+    jira_tickets:
+      - [ADEL-300: Jax.IU.Pitt_LOAD1.PrimaryScreen](https://jira.sagebionetworks.org/browse/ADEL-300)
+      - [ADM-3197: Related Task for Primary Screen](https://jira.sagebionetworks.org/browse/ADM-3197)
+
+  # Done studies
+  - name: Jax.IU.Pitt.Proteomics_Metabolomics_Pilot
+    synID: syn22313528
+    status: done
+
+  - name: Jax.IU.Pitt_APP.PS1
+    synID: syn9850001
+    status: done
+
+  - name: Jax.IU.Pitt_LOAD2.PrimaryScreen
+    synID: syn58863147
+    status: done
+
+  - name: Jax.IU.Pitt_Levetiracetam_5XFAD
+    synID: syn21784897
+    status: done
+
+  - name: Jax.IU.Pitt_MicrobiomePilot
+    synID: syn22341543
+    status: done
+
+  - name: Jax.IU.Pitt_Rat_TgF344-AD
+    synID: syn20730014
+    status: done
+
+  - name: Jax.IU.Pitt_StrainValidation
+    synID: syn21595255
+    status: done
+
+  - name: Jax.IU.Pitt_Verubecestat_5XFAD
+    synID: syn21863375
+    status: done
+
+  - name: Jax.IU.Pitt_hTau_Trem2
+    synID: syn18693211
+    status: done
+
+  - name: MODEL-AD_JAX_GWAS_Gene_Survey
+    synID: syn15811463
+    status: done
+
+  - name: MODEL-AD_Test
+    synID: syn61377081
+    status: done
+
+  - name: UCI_ABI3
+    synID: syn26943727
+    status: done
+
+  - name: UCI_Apoe_Christchurch
+    synID: syn61250684
+    status: done
+
+  - name: UCI_Bin1K358R
+    synID: syn50944316
+    status: done
+
+  - name: UCI_CCLines
+    synID: syn51713891
+    status: done
+
+  - name: UCI_Microbiome
+    synID: syn22341542
+    status: done
