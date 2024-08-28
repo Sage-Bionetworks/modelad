@@ -146,7 +146,7 @@ studies:
     synID: syn15811463
     status: done
 
-  - name: MODEL-AD_Test
+  - name: MODEL-AD_Staging
     synID: syn61377081
     status: done
 
