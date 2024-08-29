@@ -1,171 +1,196 @@
 studies:
-  # Pending studies with Jira ticket URLs
-  - name: Jax.IU.Pitt_LOAD1.Diet
-    synID: syn27210656
-    status: pending
-    jira_tickets:
-      - "ADEL-301: Jax.IU.Pitt_LOAD1.Diet (https://sagebionetworks.jira.com/browse/ADEL-301)"
-      - "ADM-3228: Related Task for Diet Study (https://sagebionetworks.jira.com/browse/ADM-3228)"
-
-  - name: Jax.IU.Pitt_LOAD2
-    synID: syn51534997
-    status: in progress
-    jira_tickets:
-      - "ADEL-327: Jax.IU.Pitt_LOAD2 upload (https://sagebionetworks.jira.com/browse/ADEL-327)"
-      - "ADEL-49 (https://sagebionetworks.jira.com/browse/ADEL-49)"
-
-  # Pending studies without Jira ticket URLs (bundled into one JIRA-000 ticket per study)
-  - name: Jax.IU.Pitt_APOE4.Trem2.R47H
-    synID: syn17095980
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Add missing brain RNAseq samples to metadata"
-          - "Correct mismatched specimen IDs in RNAseq assay metadata"
-          - "Fill missing genotype values in individual metadata"
-          - "Add missing individual metadata rows for specific brain RNAseq samples"
+  pending:
+    - name: Jax.IU.Pitt_APOE4.Trem2.R47H
+      synapseID: syn17095980
+      tasks:
+        REVISE:
           - "Remove duplicate rows in individual metadata"
-          - "Standardize genotype labels in individual metadata"
-          - "Address general problems for RNAseq samples missing in individual/biospecimen metadata"
+          - "Standardize genotype labels"
+        BLOCKED:
+          - "Add missing RNAseq samples to metadata" # Requires external data
+          - "Correct mismatched specimen IDs in RNAseq metadata" # Needs external validation
+          - "Fill missing genotype values" # Dependent on external data
+          - "Add missing individual metadata rows" # Requires additional metadata
+          - "Resolve issues with missing RNAseq samples in metadata" # Needs external clarification
+      jira:
+        - id: "JIRA-000"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-000"
 
-  - name: Jax.IU.Pitt_5XFAD
-    synID: syn21983020
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Correct missing and erroneous date fields in individual metadata"
-          - "Populate missing 'ageDeath' and 'ageDeathUnits' in individual metadata"
-          - "Correct formatting in 'sex' column of individual metadata"
+    - name: Jax.IU.Pitt_5XFAD
+      synapseID: syn21983020
+      tasks:
+        REVISE:
+          - "Correct formatting in 'sex' column"
+        BLOCKED:
+          - "Correct missing and erroneous date fields" # Requires external confirmation
+          - "Populate missing 'ageDeath' and 'ageDeathUnits'" # Dependent on external data
+      jira:
+        - id: "JIRA-001"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-001"
 
-  - name: UCI_5XFAD
-    synID: syn16798076
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Link assay metadata with biospecimen data"
-          - "Correct mismatched specimen IDs between assay and biospecimen metadata"
-          - "Standardize column names in metadata"
+    - name: UCI_5XFAD
+      synapseID: syn16798076
+      tasks:
+        REVISE:
           - "Remove duplicate rows in biospecimen metadata"
+          - "Standardize column names in metadata"
+        BLOCKED:
+          - "Link assay metadata with biospecimen data" # Requires external input
+          - "Correct mismatched specimen IDs between metadata" # Needs clarification
+      jira:
+        - id: "JIRA-002"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-002"
 
-  - name: UCI_ABCA7
-    synID: syn27207345
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Annotate missing fastq files with 'specimenID'"
-          - "Correct naming inconsistencies between individual ID and specimen ID"
-          - "Remove blank columns from RNAseq assay metadata"
+    - name: UCI_ABCA7
+      synapseID: syn27207345
+      tasks:
+        REVISE:
+          - "Remove blank columns from RNAseq metadata"
+        BLOCKED:
+          - "Annotate missing fastq files with 'specimenID'" # Requires external data
+          - "Correct naming inconsistencies between IDs" # Needs clarification
+      jira:
+        - id: "JIRA-003"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-003"
 
-  - name: UCI_PrimaryScreen
-    synID: syn25316706
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Obtain missing data for specimen '9497rh' in RNAseq assay metadata"
-          - "Standardize genotype naming in individual metadata"
+    - name: UCI_PrimaryScreen
+      synapseID: syn25316706
+      tasks:
+        REVISE:
+          - "Standardize genotype naming"
+        BLOCKED:
+          - "Obtain missing data for specimen '9497rh'" # Requires external data
+      jira:
+        - id: "JIRA-004"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-004"
 
-  - name: UCI_Trem2-R47H_NSS
-    synID: syn26943950
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Complete missing 'sex' and 'modelSystemName' entries in individual metadata"
+    - name: UCI_Trem2-R47H_NSS
+      synapseID: syn26943950
+      tasks:
+        BLOCKED:
+          - "Complete missing 'sex' and 'modelSystemName'" # Requires external data
+      jira:
+        - id: "JIRA-005"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-005"
 
-  - name: UCI_Trem2_Cuprizone
-    synID: syn50670633
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Complete 'modelSystemName' entries in individual metadata"
-          - "Remove extra blank column in RNAseq assay metadata"
+    - name: UCI_Trem2_Cuprizone
+      synapseID: syn50670633
+      tasks:
+        REVISE:
+          - "Remove extra blank column in RNAseq metadata"
+        BLOCKED:
+          - "Complete 'modelSystemName' entries" # Requires external data
+      jira:
+        - id: "JIRA-006"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-006"
 
-  - name: UCI_3xTg-AD
-    synID: syn22964685
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Standardize column capitalization in individual metadata"
-          - "Adjust genotype naming to match MODEL-AD approved values"
+    - name: UCI_3xTg-AD
+      synapseID: syn22964685
+      tasks:
+        REVISE:
+          - "Standardize column capitalization in metadata"
           - "Remove empty columns in biospecimen metadata"
+        BLOCKED:
+          - "Adjust genotype naming to match approved values" # Needs external guidance
+      jira:
+        - id: "JIRA-007"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-007"
 
-  - name: UCI_hAbeta_KI
-    synID: syn18634479
-    status: pending
-    jira_tickets:
-      - JIRA-000:
-          - "Populate missing biospecimen metadata columns"
-          - "Correct platform entries in RNAseq assay metadata"
-          - "Standardize genotype names in individual metadata"
+    - name: UCI_hAbeta_KI
+      synapseID: syn18634479
+      tasks:
+        REVISE:
+          - "Correct platform entries in RNAseq metadata"
+          - "Standardize genotype names"
+        BLOCKED:
+          - "Populate missing biospecimen metadata columns" # Requires external data
+      jira:
+        - id: "JIRA-008"
+          url: "https://sagebionetworks.jira.com/browse/JIRA-008"
 
-  # Done studies with Jira ticket URLs
-  - name: Jax.IU.Pitt_LOAD1.PrimaryScreen
-    synID: syn21595258
-    status: done
-    jira_tickets:
-      - "ADEL-300: Jax.IU.Pitt_LOAD1.PrimaryScreen (https://sagebionetworks.jira.com/browse/ADEL-300)"
-      - "ADM-3197: Related Task for Primary Screen (https://sagebionetworks.jira.com/browse/ADM-3197)"
+  in_progress:
+    - name: Jax.IU.Pitt_LOAD2
+      synapseID: syn51534997
+      tasks:
+        REVISE:
+          - "Update assay metadata alignment"
+        BLOCKED:
+          - "Resolve specimen ID discrepancies" # Needs further investigation
+      jira:
+        - id: "ADEL-327"
+          url: "https://sagebionetworks.jira.com/browse/ADEL-327"
+        - id: "ADEL-49"
+          url: "https://sagebionetworks.jira.com/browse/ADEL-49"
 
-  # Done studies
-  - name: Jax.IU.Pitt.Proteomics_Metabolomics_Pilot
-    synID: syn22313528
-    status: done
+  done:
+    - name: Jax.IU.Pitt_LOAD1.PrimaryScreen
+      synapseID: syn21595258
+      jira:
+        - id: "ADEL-300"
+          url: "https://sagebionetworks.jira.com/browse/ADEL-300"
+        - id: "ADM-3197"
+          url: "https://sagebionetworks.jira.com/browse/ADM-3197"
 
-  - name: Jax.IU.Pitt_APP.PS1
-    synID: syn9850001
-    status: done
+    - name: Jax.IU.Pitt.Proteomics_Metabolomics_Pilot
+      synapseID: syn22313528
+      jira: []
 
-  - name: Jax.IU.Pitt_LOAD2.PrimaryScreen
-    synID: syn58863147
-    status: done
+    - name: Jax.IU.Pitt_APP.PS1
+      synapseID: syn9850001
+      jira: []
 
-  - name: Jax.IU.Pitt_Levetiracetam_5XFAD
-    synID: syn21784897
-    status: done
+    - name: Jax.IU.Pitt_LOAD2.PrimaryScreen
+      synapseID: syn58863147
+      jira: []
 
-  - name: Jax.IU.Pitt_MicrobiomePilot
-    synID: syn22341543
-    status: done
+    - name: Jax.IU.Pitt_Levetiracetam_5XFAD
+      synapseID: syn21784897
+      jira: []
 
-  - name: Jax.IU.Pitt_Rat_TgF344-AD
-    synID: syn20730014
-    status: done
+    - name: Jax.IU.Pitt_MicrobiomePilot
+      synapseID: syn22341543
+      jira: []
 
-  - name: Jax.IU.Pitt_StrainValidation
-    synID: syn21595255
-    status: done
+    - name: Jax.IU.Pitt_Rat_TgF344-AD
+      synapseID: syn20730014
+      jira: []
 
-  - name: Jax.IU.Pitt_Verubecestat_5XFAD
-    synID: syn21863375
-    status: done
+    - name: Jax.IU.Pitt_StrainValidation
+      synapseID: syn21595255
+      jira: []
 
-  - name: Jax.IU.Pitt_hTau_Trem2
-    synID: syn18693211
-    status: done
+    - name: Jax.IU.Pitt_Verubecestat_5XFAD
+      synapseID: syn21863375
+      jira: []
 
-  - name: MODEL-AD_JAX_GWAS_Gene_Survey
-    synID: syn15811463
-    status: done
+    - name: Jax.IU.Pitt_hTau_Trem2
+      synapseID: syn18693211
+      jira: []
 
-  - name: MODEL-AD_Staging
-    synID: syn61377081
-    status: done
+    - name: MODEL-AD_JAX_GWAS_Gene_Survey
+      synapseID: syn15811463
+      jira: []
 
-  - name: UCI_ABI3
-    synID: syn26943727
-    status: done
+    - name: MODEL-AD_Staging
+      synapseID: syn61377081
+      jira: []
 
-  - name: UCI_Apoe_Christchurch
-    synID: syn61250684
-    status: done
+    - name: UCI_ABI3
+      synapseID: syn26943727
+      jira: []
 
-  - name: UCI_Bin1K358R
-    synID: syn50944316
-    status: done
+    - name: UCI_Apoe_Christchurch
+      synapseID: syn61250684
+      jira: []
 
-  - name: UCI_CCLines
-    synID: syn51713891
-    status: done
+    - name: UCI_Bin1K358R
+      synapseID: syn50944316
+      jira: []
 
-  - name: UCI_Microbiome
-    synID: syn22341542
-    status: done
+    - name: UCI_CCLines
+      synapseID: syn51713891
+      jira: []
+
+    - name: UCI_Microbiome
+      synapseID: syn22341542
+      jira: []
