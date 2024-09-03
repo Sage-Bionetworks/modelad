@@ -1,45 +1,45 @@
-# Study Identifiers
-adelID: "https://sagebionetworks.jira.com/servicedesk/customer/portal/12/ADEL-261"
-admID: "https://sagebionetworks.jira.com/browse/ADM-2659"
-studyID: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
+# study_config.yml
 
-# Study Details
-studyName: "The Jax.IU.Pitt LOAD2 PrimaryScreen Study"
-program: "MODEL-AD"
-module: "ADKP"
-studyFocus: "Alzheimer Disease"
-grantNumber: "U54 AG054345"
-leadPI: "Bruce Lamb"
-institution: "Indiana University School of Medicine"
-species: "Mouse"
-specimenType: "Brain, Blood"
-dataType: "Gene Expression"
-fundingAgency: "NIA"
-
-# Data Liaison Information
-dataLiaisonName: "Catrina Spruce"
-dataLiaisonEmail: "catrina.spruce@jax.org"
-
-# Synapse Information
-synIDs:
-  study: "syn58863147"
-  staging: "syn58863153"
-  dataSurveyInventory: "" # Insert synID or link to external documentation
-  projectDCA: "" # Provide Synapse Project for DCA
-
-# Metadata Synapse IDs
-metadata:
-  general: "syn59479679"
-  individual: "syn53282594"
-  biospecimen: "syn53282599"
-
-# Assay-Specific Synapse IDs
-assays:
-  RNASeq:
-    raw_data: "syn59479899"
-    processed_data: "syn59479678"
-    metadata: "syn53710873"
-
-
-# Study Information
-existingStudy: "No"
+study:
+  name: "Jax.IU.Pitt_LOAD2"
+  ids:
+    adel: "https://sagebionetworks.jira.com/browse/ADEL-49"
+    adm: "https://sagebionetworks.jira.com/browse/ADM-118"
+    syn: "syn51534997"
+    staging: "syn51535045"
+  existing: false
+  info:
+    grant: "U54AG054345"
+    portal: "ADKP"
+    program: "MODEL-AD"
+    focus: "Gene Expression"
+    pi: "Bruce Lamb"
+    agency: "NIA"
+  institution:
+    name: "Indiana University School of Medicine"
+    contact: "catrina.spruce@jax.org"
+  specimens:
+    species: "Mouse"
+    types:
+      - "Brain"
+      - "Blood"
+  metadata:
+    general: "syn51745755"
+    individual: "syn34228037"
+    biospecimen: "syn34228034"
+    RNASeq: "syn51708695"
+    TMTquantitation: "syn62012514"
+    immunoassay: "syn62012516"
+    metabolomics: "syn62012515"
+    id_key: "syn51441046"
+  data:
+    behavioral: "syn51745788"
+    RNASeq:
+      raw: "syn51748057"
+      processed: "syn51748058"
+    imaging: "syn53360242"
+    immunoassay: "syn51904331"
+    metabolomics: "syn51748055"
+    proteomics: "syn51745781"
+    manifest:
+      RNASeq: "syn51708694"
