@@ -41,5 +41,4 @@ study:
     immunoassay: "syn51904331"
     metabolomics: "syn51748055"
     proteomics: "syn51745781"
-    manifest:
-      RNASeq: "syn51708694"
+
