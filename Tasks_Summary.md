@@ -1,6 +1,4 @@
-Here’s a revised markdown summary for your repository:
-
----
+# MODEL-AD Tasks Summary
 
 # Pending and Blocked Tasks Summary
 
@@ -100,7 +98,3 @@ Here’s a revised markdown summary for your repository:
 
 4. **Correct Specific Data Entries:**
    - **UCI_hAbeta_KI**: Platform entries in RNAseq metadata
-
----
-
-This revised summary is ready for inclusion in your repository and provides a clear overview of both blocked and actionable tasks.
