@@ -1,6 +1,6 @@
 FROM rocker/tidyverse:latest
 
-LABEL source="https://github.com/xx/Dockerfile"
+LABEL source="https://github.com/Sage-Bionetworks/modelad/Dockerfile"
 LABEL maintainer="richard.yaxley@sagebase.org"
 
 # Install system dependencies for R packages: https://r-docs.synapse.org/articles/systemDependencies.html
