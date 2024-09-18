@@ -1,0 +1,17 @@
+services:
+  arch-synr:
+    image: arch-synr # name of built image
+    build: . # Dockerfile in current directory
+    container_name: arch-synr-container
+    environment:
+      - DISABLE_AUTH=true
+      - ROOT=TRUE
+      - TERM=xterm-256color
+      - LOG_LEVEL=INFO
+    volumes: # mount host directories or named volumes into the container.
+      - ~/.synapseConfig:/home/rstudio/.synapseConfig
+      - ~/.config/rstudio/rstudio-prefs.json:/home/rstudio/.config/rstudio/rstudio-prefs.json
+      - ~/modelad:/home/rstudio/modelad
+      # - ~/curation:/home/rstudio/curation
+    ports:
+      - "8787:8787" # map container port to host port (localhost:8787)
