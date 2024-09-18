@@ -7,19 +7,12 @@ RUN apt-get clean all && \
     apt-get install -y \
         curl \
         neovim \
-        # libcurl4-openssl-dev \
-        # libssl-dev \
-        # libffi-dev \
-        # zlib1g-dev \
-        # dpkg-dev \
         python3-pip \
         python3-venv && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install synapseclient
 
-# Install R packages
-# R Dependencies: https://r-docs.synapse.org/articles/systemDependencies.html
 USER rstudio
 RUN Rscript -e 'install.packages("reticulate")'
 RUN Rscript -e 'install.packages("rjson")'
