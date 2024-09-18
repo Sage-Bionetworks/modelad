@@ -1,7 +1,4 @@
-FROM rocker/tidyverse:latest
-
-LABEL source="https://github.com/Sage-Bionetworks/modelad/Dockerfile"
-LABEL maintainer="richard.yaxley@sagebase.org"
+FROM rocker/tidyverse:4.4
 
 # Install system dependencies for R packages: https://r-docs.synapse.org/articles/systemDependencies.html
 RUN apt-get clean all && \
