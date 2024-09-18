@@ -1,4 +1,8 @@
-## **MODEL-AD Task Summary**
+## **MODEL-AD - Legacy Study Task Summary**
+
+- Updated: 2024-09-18
+- [template_individual_animal_model-ad.xlsx](https://www.synapse.org/Synapse:syn21084071)
+- J. Beck's review of  RNA sequencing issues: [RNAseq_metadata_issues](docs/MODEL-AD_RNAseq_metadata_issues.md)
 
 ---
 
@@ -114,3 +118,9 @@
 - RNAseq metadata contains incorrect "platform" entries ("NextSeq501", "NextSeq502", etc., should be "NextSeq500").  
 - Genotypes in individual metadata don't conform to approved values (e.g., "B6N;B6J" should be "C57BL6J:C57BL6N").  
 - Genotype background "C57BL/6N tac/B6" doesn't match approved values.
+
+---
+
+
+# Planned Updates
+- pathology data
