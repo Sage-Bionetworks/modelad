@@ -5,99 +5,54 @@ library(yaml)
 library(purrr)
 
 # Authenticate with Synapse
-synLogin()
+invisible(synLogin())
 
-# Define the path to the study configuration file
+# Load configuration
 config_path <- "modelad/studies/Jax.IU.Pitt_Verubecestat_5XFAD/study_config.yml"
-
-# Check if the configuration file exists
-if (!file.exists(config_path)) {
-  stop("Configuration file not found: ", config_path)
-}
-
-# Read the study configuration from the YAML file
 config <- yaml::read_yaml(config_path)
 
-# Base URL for constructing full URLs for ADEL and ADM identifiers
+# Extract information
 base_url <- "https://sagebionetworks.jira.com/browse/"
-
-# Construct full URLs for ADEL and ADM identifiers
-adel_url <- paste0(base_url, config$study$adelID)
-adm_url <- paste0(base_url, config$study$admID)
-
-# Extract relevant information from the configuration
 target_folder_id <- config$study$studyID
-metadata_general_id <- config$study$metadata$general
+data_ids <- unlist(map(config$study$assays, "data"))
+annotations_list <- list(contentType = "dataset", studyName = config$study$name, program = config$study$program)
+file_view_id <- config$study$viewID
 
-# Create a list of all data_ids from config$study$assays content
-data_ids <- unlist(lapply(config$study$assays, function(assay) assay$data))
-
-# Define annotations to set
-annotations_list <- list(
-  contentType = "dataset",
-  studyName = config$study$name,
-  program = config$study$program
-)
-
-# Function to move files to the target folder
-move_file_to_folder <- function(file_id, folder_id) {
-  entity <- synGet(file_id)
-  entity$parentId <- folder_id
-  synStore(entity)
+# Define functions
+move_file <- function(file_id, folder_id) {
+  synStore(synGet(file_id) %>% { .$parentId <- folder_id; . })
 }
 
-# Function to set annotations
 set_annotations <- function(file_id, annotations) {
   synSetAnnotations(file_id, annotations)
 }
 
-# Function to move files to the target folder and set annotations
-move_and_annotate <- function(data_id, target_folder_id, annotations_list) {
-  move_file_to_folder(data_id, target_folder_id)
-  set_annotations(data_id, annotations_list)
+move_as_new_version <- function(synIDa, synIDb) {
+  synStore(synGet(synIDb) %>% { .$filePath <- synGet(synIDa, downloadFile = TRUE)$path; . })
 }
 
-# Function to move a file to another file ID as a new version
-move_file_as_new_version <- function(synIDa, synIDb) {
-  entity_a <- synGet(synIDa, downloadFile = TRUE)
-  entity_b <- synGet(synIDb)
-  entity_b$filePath <- entity_a$path
-  entity_b <- synStore(entity_b)
+curate_annotations <- function(file_view_id, config) {
+  annotations <- synTableQuery(paste("SELECT * FROM", file_view_id))$asDataFrame() %>% as_tibble() %>%
+    filter(Program == "[\"MODEL-AD\"]", Study == config$study$name) %>%
+    mutate(across(c(name, program, portal), ~ ifelse(is.na(.x) | .x != config$study[[cur_column()]], config$study[[cur_column()]], .x)))
+
+  changes <- annotations %>% summarise(across(everything(), ~ sum(. != annotations[[cur_column()]])))
+  print("Summary of changes:"); print(changes)
+
+  synStore(synBuildTable("Updated Annotations", file_view_id, annotations))
 }
 
-# Move files to the target folder and set annotations
-# walk(data_ids, ~move_and_annotate(.x, target_folder_id, annotations_list))
 
-# Move specific file to the target metadata folder
-a <- synGet("syn52360062", download = TRUE)
-b <- synGet("syn26136407")
-move_file_as_new_version("syn52360062", "syn26136407")
+query <- synTableQuery("SELECT * FROM syn61586472")
+result <- read_csv(query$filepath) %>% as_tibble()
+notes <- result %>% select(4,5, 25:38) %>% glimpse
+notes %>% view
 
-# Download the file view annotations from "Portal - Studies Table"
-file_view_id <- "syn17083367"
-file_view_annotations <- synTableQuery(paste("SELECT * FROM", file_view_id))$asDataFrame() %>%
-  as_tibble()
-
-# Filter annotations to include only the MODEL-AD consortium and the specific study
-study_annotations <- file_view_annotations %>%
-  filter(Program == "[\"MODEL-AD\"]", Study == config$study$name)
-
-# Update study annotations with missing or mismatching information from the configuration
-updated_annotations <- study_annotations %>%
-  mutate(across(
-    c(name, program, portal),
-    ~ ifelse(is.na(.x) | .x != config$study[[cur_column()]], config$study[[cur_column()]], .x)
-  ))
-
-# Summarize and print changes
-changes <- updated_annotations %>%
-  summarise(across(everything(), ~ sum(. != study_annotations[[cur_column()]])))
-
-print("Summary of changes:")
-print(changes)
-
-# Store the updated annotations back to Synapse
-table <- synBuildTable("Updated Annotations", file_view_id, updated_annotations)
-synStore(table)
+notes %>% fi
+# Main tasks
+# curate_annotations(file_view_id, config)
+# move_as_new_version("syn52360062", "syn26136407")
+# walk(data_ids, ~move_file(.x, target_folder_id))
+# walk(data_ids, ~set_annotations(.x, annotations_list))
 
 message("Dataset curation completed successfully.")

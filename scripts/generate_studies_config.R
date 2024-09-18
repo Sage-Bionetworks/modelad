@@ -10,22 +10,32 @@ study_dirs <- list.dirs(base_path, recursive = FALSE)
 create_study_entry <- function(study_dir) {
   study_name <- basename(study_dir)
   config_path <- file.path(study_dir, "study_config.yml")
-  
-  if (file.exists(config_path)) {
-    config <- read_yaml(config_path)
-    synID <- config$synIDs$study
-    list(
-      study = study_name,
-      synID = synID,
-      config_path = config_path,
-      synapseURL = paste0("https://www.synapse.org/#!Synapse:", synID),
-      stagingURL = paste0("https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=", synID),
-      portalURL = paste0("https://adknowledgeportal.org/studies/", study_name)
-    )
-  } else {
+
+  if (!file.exists(config_path)) {
     warning("Configuration file not found for study: ", study_name)
-    NULL
+    return(NULL)
   }
+
+  config <- tryCatch(read_yaml(config_path), error = function(e) {
+    warning("Error reading configuration file for study: ", study_name, " - ", e$message)
+    return(NULL)
+  })
+
+  if (is.null(config)) return(NULL)
+
+  synID <- config$synIDs$study
+  if (is.null(synID) || synID == "") {
+    warning("synID is missing in the configuration file for study: ", study_name)
+    return(NULL)
+  }
+
+  list(
+    name = study_name,
+    synID = synID,
+    config_path = config_path,
+    synapseURL = paste0("https://www.synapse.org/#!Synapse:", synID),
+    stagingURL = paste0("https://staging.adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=", synID)
+  )
 }
 
 # Create the list of study entries

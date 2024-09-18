@@ -1,45 +1,27 @@
-# Study Identifiers
-adelID: "https://sagebionetworks.jira.com/servicedesk/customer/portal/12/ADEL-261"
-admID: "https://sagebionetworks.jira.com/browse/ADM-2659"
-studyID: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
+# study_config.yaml
 
-# Study Details
-studyName: "The Jax.IU.Pitt LOAD2 PrimaryScreen Study"
-program: "MODEL-AD"
-module: "ADKP"
-studyFocus: "Alzheimer Disease"
-grantNumber: "U54AG054345"
-leadPI: "Bruce Lamb"
-institution: "Indiana University School of Medicine"
-species: "Mouse"
-specimenType: "Brain, Blood"
-dataType: "Gene Expression"
-fundingAgency: "NIA"
-
-# Data Liaison Information
-dataLiaisonName: "Catrina Spruce"
-dataLiaisonEmail: "catrina.spruce@jax.org"
-
-# Synapse Information
-synIDs:
-  study: "syn58863147"
-  staging: "syn58863153"
-  dataSurveyInventory: "" # Insert synID or link to external documentation
-  projectDCA: "" # Provide Synapse Project for DCA
-
-# Metadata Synapse IDs
-metadata:
-  general: "syn59479679"
-  individual: "syn53282594"
-  biospecimen: "syn53282599"
-
-# Assay-Specific Synapse IDs
-assays:
-  RNASeq:
-    raw_data: "syn59479899"
-    processed_data: "syn59479678"
-    metadata: "syn53710873"
-
-
-# Study Information
-existingStudy: "No"
+study:
+  name: "Jax.IU.Pitt_LOAD2.PrimaryScreen"
+  ids:
+    adel: "https://sagebionetworks.jira.com/servicedesk/customer/portal/12/ADEL-261"
+    adm: "https://sagebionetworks.jira.com/browse/ADM-2659"
+    syn: "syn58863147"
+    staging: "syn58863153"
+  metadata:
+    general: "syn59479679"
+    individual: "syn53282594"
+    biospecimen: "syn53282599"
+    RNASeq: "syn53710873"
+  data:
+    RNASeq:
+      raw: "syn59479899"
+      processed: "syn59479678"
+  info:
+    grant: "U54AG054345"
+    portal: "ADKP"
+    program: "MODEL-AD"
+    pi: "Bruce Lamb"
+    contact: "catrina.spruce@jax.org"
+  specimens:
+    species: "Mouse"
+    types: ["Brain", "Blood"]

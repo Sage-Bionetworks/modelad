@@ -1,0 +1,41 @@
+# Synapse Information
+study:
+  name: "Jax.IU.Pitt_LOAD1.PrimaryScreen"
+  adelID: "ADEL-300"
+  admID: "ADM-3197"
+  studyID: "syn21595258"
+  stagingID: "syn23564042"
+  viewID: ""
+  portal: "AMP-AD"
+  program: "MODEL-AD"
+  liaison: "Catrina Spruce"
+  liaisonEmail: "catrina.spruce@jax.org"
+  metadata:
+    general: "syn59479267"
+    individual: "syn59479967"
+    biospecimen: "syn58614964"
+  assays:
+    autoradiography:
+      metadata: ""
+      data: ""
+    behavior:
+      metadata: ""
+      data: ""
+    nanostring:
+      metadata: "syn58615785"
+      data: ""
+    immunoassay:
+      metadata: ""
+      data: ""
+    pharmacokinetic:
+      metadata: ""
+      data: ""
+    PET:
+      metadata: ""
+      data: ""
+    proteomics:
+      metadata: ""
+      data: ""
+
+# Study Information
+existing: "False"
