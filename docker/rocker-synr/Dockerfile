@@ -1,13 +1,12 @@
 FROM rocker/tidyverse:4.3.3
-LABEL source="https://github.com/Sage-Bionetworks/modelad/Dockerfile"
-LABEL maintainer="richard.yaxley@sagebase.org"
 
-# Install system dependencies for R packages: https://r-docs.synapse.org/articles/systemDependencies.html
+
 RUN apt-get clean all && \
     apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
         curl \
+        neovim \
         # libcurl4-openssl-dev \
         # libssl-dev \
         # libffi-dev \
@@ -19,7 +18,8 @@ RUN apt-get clean all && \
 
 RUN pip3 install synapseclient
 
-# Install R packages directly
+# Install R packages
+# R Dependencies: https://r-docs.synapse.org/articles/systemDependencies.html
 USER rstudio
 RUN Rscript -e 'install.packages("reticulate")'
 RUN Rscript -e 'install.packages("rjson")'
