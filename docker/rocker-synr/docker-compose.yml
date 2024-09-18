@@ -1,8 +1,8 @@
 services:
   synr:
-    image: synr:latest # name of built image
+    image: rocksynr:4.3.3 # name of built image
     build: . # Dockerfile in current directory
-    container_name: synr-container
+    container_name: rs-container
     environment:
       - DISABLE_AUTH=true
       - ROOT=TRUE
