@@ -39,3 +39,5 @@ docker stop <container_id>
 docker rm <container_id>
 ### Remove Image
 docker rmi <image_name>:<tag>
+### Force Remove Image
+docker rmi -f <image_name>:<tag>
