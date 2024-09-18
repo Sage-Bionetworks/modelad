@@ -1,8 +1,8 @@
 ## **MODEL-AD - Legacy Study Task Summary**
 #### Updated: 2024-09-18
 
-- For more detail review J. Beck's observations RNA Sequencing data issues: [RNAseq_metadata_issues](docs/MODEL-AD_RNAseq_metadata_issues.md)
-- [template_individual_animal_model-ad.xlsx](https://www.synapse.org/Synapse:syn21084071)
+- For more detail review J. Beck's observations RNA Sequencing data issues: [RNAseq_metadata_issues](RNAseq_metadata_issues.md)
+- [template_individual_animal_model-ad.v13](https://www.synapse.org/Synapse:syn21084071)
 - [DCA Validation](https://dca.app.sagebionetworks.org/)
 
 ---
