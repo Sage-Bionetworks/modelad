@@ -1,21 +1,19 @@
 FROM archlinux:latest
 
-# Set working directory to /tmp for better performance
-WORKDIR /tmp
-
 # Install dependencies in a single RUN command
-RUN pacman -Syu --noconfirm r neovim python-pip python-pipx 
+RUN pacman -Syu --noconfirm curl wget neovim python
 
-# Install Python packages
-RUN pipx install synapseclient
+#python3-venv python3-pip
+
+# # Install Python packages
+# RUN pip3 install synapseclient
 
 # Install R packages
-RUN Rscript -e 'install.packages(c("reticulate", "rjson", "janitor"), repos="https://cloud.r-project.org/")' && \
-    Rscript -e 'install.packages(c("synapser", "synapserutils"), repos="http://staging-ran.synapse.org")'
-
-# Expose the common default port
-EXPOSE 443
-
-# Set environment variables for better debugging and logging
-ENV TERM=xterm-256color \
-    LOG_LEVEL=INFO
+# R Dependencies: https://r-docs.synapse.org/articles/systemDependencies.html
+# USER rstudio
+# RUN Rscript -e 'install.packages("reticulate")'
+# RUN Rscript -e 'install.packages("rjson")'
+# RUN Rscript -e 'install.packages("janitor")'
+# RUN Rscript -e 'install.packages("synapser", repos ="http://staging-ran.synapse.org")'
+# RUN Rscript -e 'install.packages("synapserutils", repos ="http://staging-ran.synapse.org")'
+# USER root
