@@ -1,6 +1,6 @@
 services:
   synr:
-    image: rocksynr:4.3.3 # name of built image
+    image: rock-synr # name of built image
     build: . # Dockerfile in current directory
     container_name: rs-container
     environment:
