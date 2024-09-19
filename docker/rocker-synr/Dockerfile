@@ -1,23 +1,18 @@
-FROM rocker/tidyverse:4.4
+FROM rocker/tidyverse:4.3.3
 
-# Install system dependencies for R packages: https://r-docs.synapse.org/articles/systemDependencies.html
+
 RUN apt-get clean all && \
     apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-        curl \ 
-        libcurl4-openssl-dev \
-        libssl-dev \
-        libffi-dev \
-        zlib1g-dev \
-        dpkg-dev \
+        curl \
+        neovim \
         python3-pip \
         python3-venv && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install synapseclient
 
-# Install R packages directly
 USER rstudio
 RUN Rscript -e 'install.packages("reticulate")'
 RUN Rscript -e 'install.packages("rjson")'

@@ -1,0 +1,43 @@
+# Docker Cheatsheet
+
+## Docker Compose
+### Build and Start Containers
+docker-compose up --build
+### Stop and Remove Containers, Networks, and Images
+docker-compose down --rmi all
+### Start Containers
+docker-compose up
+### Stop Containers
+docker-compose down
+### View Running Containers
+docker-compose ps
+### View Logs
+docker-compose logs
+### Execute Command in Running Container
+docker-compose exec <service_name> <command>
+### Scale Service
+docker-compose up --scale <service_name>=<number_of_instances>
+### Rebuild Specific Service
+docker-compose up --build <service_name>
+### Force Recreate Containers
+docker-compose up --force-recreate
+### Run Containers in Detached Mode
+docker-compose up -d
+
+## Docker
+### Build Image
+docker build -t <image_name>:<tag> .
+### Run Container
+docker run -d -p <port_number>:<port_number> <image_name>:<tag>
+### List Images
+docker images
+### List Containers
+docker ps -a
+### Stop Container
+docker stop <container_id>
+### Remove Container
+docker rm <container_id>
+### Remove Image
+docker rmi <image_name>:<tag>
+### Force Remove Image
+docker rmi -f <image_name>:<tag>

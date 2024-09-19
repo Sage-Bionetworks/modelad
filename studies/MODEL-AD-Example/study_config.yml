@@ -1,48 +1,34 @@
-study_config.yaml
+# study_config_template.yaml
 
-# Study Configuration Template
-
-# Study Identifiers
-adelID: "<ADEL ticket link>"  # Link to ADEL ticket
-admID: "<ADM ticket link>"  # Link to ADM ticket
-studyID: "<Unique study identifier>"  # Unique identifier for the study
-
-# Study Details
-studyName: "<Full study name>"  # Full name of the study
-program: "<Program name>"  # Program under which the study is conducted
-module: "<Module name>"  # Module name
-studyFocus: "<Main focus of the study>"  # Main focus of the study
-grantNumber: "<Grant number>"  # Grant number funding the study
-leadPI: "<Lead PI's name>"  # Lead Principal Investigator's name
-institution: "<Institution name>"  # Institution leading the study
-species: "<Species used>"  # Species used in the study
-specimenType: "<Types of specimens collected>"  # Types of specimens collected
-dataType: "<Type of data generated>"  # Type of data generated
-fundingAgency: "<Funding agency>"  # Funding agency
-
-# Data Liaison Information
-dataLiaisonName: "<Data liaison's name>"  # Data liaison's name
-dataLiaisonEmail: "<Data liaison's email>"  # Data liaison's email address
-
-# Synapse Information
-synIDs:
-  study: "<Synapse ID for main study project>"  # Synapse ID for the main study project
-  staging: "<Synapse ID for staging folder>"  # Synapse ID for the staging folder
-  dataSurveyInventory: "<Synapse ID or link to data survey inventory>"  # Synapse ID or link to external documentation for data survey inventory
-  projectDCA: "<Synapse Project ID for DCA>"  # Synapse Project ID for DCA
-
-# Metadata Synapse IDs
-metadata:
-  general: "<Synapse ID for general metadata>"  # Synapse ID for general metadata
-  individual: "<Synapse ID for individual-level metadata>"  # Synapse ID for individual-level metadata
-  biospecimen: "<Synapse ID for biospecimen metadata>"  # Synapse ID for biospecimen metadata
-
-# Assay-Specific Synapse IDs
-assays:
-  RNASeq:
-    raw_data: "<Synapse ID for raw RNASeq data>"  # Synapse ID for raw RNASeq data
-    processed_data: "<Synapse ID for processed RNASeq data>"  # Synapse ID for processed RNASeq data
-    metadata: "<Synapse ID for RNASeq metadata>"  # Synapse ID for RNASeq metadata
-
-# Study Information
-existingStudy: "<Yes or No>"  # Indicates if the study is existing or new
+study:
+  name: "Study_Name"
+  ids:
+    adel: "ADEL_URL"
+    adm: "ADM_URL"
+    syn: "SYN_ID"
+    staging: "STAGING_ID"
+    view: "VIEW_ID"
+  existing: false  # true or false
+  info:
+    grant: "Grant_Number"
+    portal: "Portal_Name"
+    program: "Program_Name"
+    module: "Module_Name"
+    focus: "Study_Focus"
+    pi: "Principal_Investigator"
+    agency: "Funding_Agency"
+  institution:
+    name: "Institution_Name"
+    contact: "Contact_Email"
+  specimens:
+    species: "Species_Used"
+    types: ["Specimen_Type1", "Specimen_Type2"]
+  metadata:
+    general: "General_Metadata_ID"
+    individual: "Individual_Metadata_ID"
+    biospecimen: "Biospecimen_Metadata_ID"
+  assays:
+    Assay_Name:
+      raw: "Raw_Data_ID"
+      processed: "Processed_Data_ID"
+      meta: "Metadata_ID"

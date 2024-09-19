@@ -16,3 +16,4 @@ data
 models/templates/
 *.csv
 *.docx
+*.gz
