@@ -15,8 +15,8 @@ For each study, please:
 4. Validate your data with the Data Curator App (DCA). 
   - To access the templates for your studies:
     - Go to [DCA](https://dca.app.sagebionetworks.org/)
-    - Select DCC > AD Knowledge Portal
-    - Select Project > AD Knowledge Portal - Backend
+    - Select DCC > **AD Knowledge Portal**
+    - Select Project > **AD Knowledge Portal - Backend**
     - Select Folder > Jax.IU.Pitt_LOAD2 (for example)
     - Select the template to download
     - Complete the template with the latest revision of your study metadata
