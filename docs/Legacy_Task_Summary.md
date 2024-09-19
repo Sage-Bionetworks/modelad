@@ -1,9 +1,27 @@
-## **MODEL-AD - Legacy Study Task Summary**
-#### Updated: 2024-09-18
+## Study Task Summary: MODEL-AD
+#### Updated: 2024-09-19
 
-- For more detail review J. Beck's observations RNA Sequencing data issues: [RNAseq_metadata_issues](RNAseq_metadata_issues.md)
-- [template_individual_animal_model-ad.v13](https://www.synapse.org/Synapse:syn21084071)
-- [DCA Validation](https://dca.app.sagebionetworks.org/)
+This document outlines specific fixes needed from each study's contributors. The list is not exhaustive. For more detail about RNA Sequencing data issues see: [RNAseq_metadata_issues](RNAseq_metadata_issues.md)
+
+**Task Summary**
+
+For each study, please:
+
+1. Review the relevant sections for your study.
+2. Update your metadata, focusing on the specific IDs and details mentioned.
+3. Ensure your updates align with the approved values listed in the metadata template and Confluence documentation:
+  - [Contribute Data to MODEL-AD: A Step-by-Step Guide](https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2573402701/Contribute+Data+to+MODEL-AD+A+Step-by-Step+Guide)
+  - [Mouse Naming Standards](https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2125201409/Mouse+Naming+Standards)
+4. Validate your data with the Data Curator App (DCA). 
+  - To access the templates for your studies:
+    - Go to [DCA](https://dca.app.sagebionetworks.org/)
+    - Select DCC > AD Knowledge Portal
+    - Select Project > AD Knowledge Portal - Backend
+    - Select Folder > Jax.IU.Pitt_LOAD2 (for example)
+    - Select the template to download
+    - Complete the template with the latest revision of your study metadata
+    - Submit the metadata for validation
+    - Resolve any issues so that the metadata complies with the data model
 
 ---
 
