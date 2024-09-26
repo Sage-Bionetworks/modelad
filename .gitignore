@@ -1,19 +1,41 @@
+# Python
 venv/
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.egg-info/
+build/
+dist/
+
+# R
 .Rhistory
 .RData
 .Rproj.user/
 .Renviron
-.DS_Store
-*.pyc
-__pycache__/
-.ipynb_checkpoints/
-temp
-tmp
-data
-.vscode/
-*.xlsx
 
-models/templates/
-*.csv
-*.docx
+# System & Config Files
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode/
+.ssh/
+.config/
+.synapseConfig
+
+# Temporary & Backup
+tmp/
+*.tmp
+*~
+
+# Data & Models
+data/
+templates/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Other
+*.xlsx
 *.gz
