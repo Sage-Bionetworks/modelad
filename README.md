@@ -1,14 +1,16 @@
 # Model-AD Data Curation Tools
 
-This repository contains information about the curation of MODEL-AD data at Sage Bionetworks.
+**Introduction**
 
-## Resources
+The MODEL-AD project aims to cure Alzheimer's disease. This repository contains information about the curation and harmonization of this data at Sage Bionetworks.
 
-The Model-AD curation project is hosted on GitHub: [Model-AD curation project](https://github.com/Sage-Bionetworks/modelad)
-
-- [Model-AD Program](https://adknowledgeportal.synapse.org/Explore/Programs/DetailsPage?Program=MODEL-AD)
-- [Model-AD Resources](https://help.adknowledgeportal.org/apd/MODEL-AD-Resources.2562129992.html)
-- [Model-AD Data Portal](https://www.synapse.org/#!Synapse:syn61250673)
-- [Model-AD Website](https://www.model-ad.org/)
-- [Synapse Python Documentation](https://python-docs.synapse.org/)
-- [Synapse R Client GitHub](https://github.com/Sage-Bionetworks/synapser)
+**Resources**
+* **GitHub Repositories:**
+	+ Model-AD curation project: https://github.com/Sage-Bionetworks/modelad
+	- Synapse R Client GitHub: https://github.com/Sage-Bionetworks/synapser
+	- Synapse Python Documentation: https://python-docs.synapse.org/
+* **Program Links:**
+	+ Model-AD Program: https://adknowledgeportal.synapse.org/Explore/Programs/DetailsPage?Program=MODEL-AD
+	+ Model-AD Website: https://www.model-ad.org/
+* **Recent Developments**
+	+ https://www.alzforum.org/news/conference-coverage/model-ad-probably-has-something-you
