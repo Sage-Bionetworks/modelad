@@ -1,6 +1,4 @@
 FROM rocker/tidyverse:4.3.3
-
-
 RUN apt-get clean all && \
     apt-get update && \
     apt-get upgrade -y && \
