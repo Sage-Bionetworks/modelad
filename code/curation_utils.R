@@ -7,7 +7,8 @@ library(readr)
 library(readxl)
 library(glue)
 library(yaml)
-library(purrr)  # For handling nested lists
+library(purrr)
+library(stringr)
 
 # Authenticate with Synapse
 login_to_synapse <- function() {
@@ -20,74 +21,133 @@ read_config <- function(config_path) {
   yaml::read_yaml(config_path)
 }
 
-# Dynamically extract all Synapse IDs from the study data section of the configuration
+# Extract Synapse IDs from the study data section
 extract_synapse_ids <- function(data_section) {
-  # Recursively flatten lists and extract Synapse IDs
-  ids <- unlist(lapply(data_section, function(x) {
-    if (is.character(x)) {
-      return(x)  # Direct Synapse ID
-    } else if (is.list(x)) {
-      return(unlist(x))  # Flatten nested lists to extract all IDs
-    }
-  }))
-  return(ids)
+  unlist(lapply(data_section, function(x) if (is.character(x)) x else unlist(x)))
 }
 
-# Create a Synapse file view schema, store it, and return the view ID
+# Create and store a Synapse file view schema
 create_file_view_schema <- function(study_name, parent_id, scopes, columns = NULL) {
-  tryCatch({
-    # Configure file view schema
-    schema <- EntityViewSchema(
-      name = study_name,
-      parent = parent_id,
-      scopes = scopes,
-      includeEntityTypes = c(EntityViewType$FILE),
-      addDefaultViewColumns = TRUE,
-      addAnnotationColumns = TRUE,
-      columns = columns
-    )
-    
-    # Store the schema in Synapse
-    stored_schema <- synStore(schema)
-    cat("File view schema created and uploaded successfully with ID:", stored_schema$properties$id, "\n")
-    return(stored_schema$properties$id)
-  }, error = function(e) {
-    stop("Error creating or storing file view schema:", e$message)
-  })
+  schema <- EntityViewSchema(
+    name = study_name,
+    parent = parent_id,
+    scopes = scopes,
+    includeEntityTypes = c(EntityViewType$FILE),
+    addDefaultViewColumns = TRUE,
+    addAnnotationColumns = TRUE,
+    columns = columns
+  )
+  synStore(schema)$properties$id
 }
 
-# Query the file view content from Synapse and return as a tibble
+# Query file view content and return as a tibble
 query_file_view_to_tibble <- function(fileview_id) {
-  tryCatch({
-    query <- paste("SELECT * FROM", fileview_id)
-    data <- synTableQuery(query)$asDataFrame() %>% as_tibble()
-    cat("File view queried successfully. Number of rows:", nrow(data), "\n")
-    return(data)
-  }, error = function(e) {
-    stop("Error querying file view:", e$message)
-  })
+  synTableQuery(paste("SELECT * FROM", fileview_id))$asDataFrame() %>% as_tibble()
 }
 
-# Add or modify annotations for Synapse files
-set_annotations <- function(entity_id, annotations) {
-  tryCatch({
-    entity <- synGet(entity_id)
-    existing_annots <- synGetAnnotations(entity)
-    updated_annots <- c(existing_annots, annotations) # Merge existing and new annotations
-    synSetAnnotations(entity, annotations = updated_annots)
-    cat("Annotations set successfully for entity:", entity_id, "\n")
-  }, error = function(e) {
-    stop("Error setting annotations:", e$message)
-  })
+# Set annotations on a Synapse entity
+set_annotations <- function(entity_id, annotations_list) {
+  entity <- synGet(entity_id)
+  entity$annotations <- annotations_list
+  synStore(entity)
 }
 
-# Update or store a modified file view using synStore
-update_file_view <- function(fileview_data, output_path) {
-  tryCatch({
-    # Save the modified fileview data locally
-    modified_file <- file.path(output_path, "fileview_new.csv")
-    write_csv(fileview_data, modified_file)
-    
-    # Create a Synapse File object and store it
-    file <- File(path = modified_file, parentId = "synParentID")  # Update parentId as needed
-    stored_file 
+# Download data from Synapse
+download_data <- function(synID, download_path) {
+  if (!dir.exists(download_path)) dir.create(download_path, recursive = TRUE)
+  synGet(synID, downloadLocation = download_path)
+}
+
+# Move files to a specified folder
+move_file_to_folder <- function(file_id, target_folder_id) {
+  file <- synGet(file_id)
+  file$parentId <- target_folder_id
+  synStore(file, forceVersion = FALSE)
+}
+
+# Rename files if needed
+rename_file_if_needed <- function(file_id, new_name) {
+  file <- synGet(file_id)
+  if (file$name != new_name) {
+    file$name <- new_name
+    synStore(file, forceVersion = FALSE)
+  }
+}
+
+# Get all file names in a folder
+get_file_names_in_folder <- function(folder_id) {
+  map_chr(synGetChildren(folder_id)$asList(), "name")
+}
+
+# Update a Synapse wiki page
+update_wiki_page <- function(synapse_id, wiki_id, new_content) {
+  wiki <- synGetWiki(owner = synapse_id, wikiId = wiki_id)
+  wiki$markdown <- new_content
+  synStore(wiki)
+}
+
+# Clean formatting in markdown content
+clean_formatting <- function(markdown_content) {
+  str_replace_all(markdown_content, "<em1[^>]*>|<em>|</em>", "")
+}
+
+# Convert DOCX to Markdown and update Synapse wiki
+convert_and_update_wiki <- function(file_name, file_mappings, dry_run = TRUE) {
+  wiki_project <- file_mappings[[file_name]]
+  doc_path <- file.path("modelad/data/docs", file_name)
+  output_file <- sub(".docx$", ".md", doc_path)
+  system(paste("pandoc -f docx -t markdown_strict --wrap=none -o", output_file, doc_path))
+  clean_markdown <- clean_formatting(read_file(output_file))
+  if (!dry_run) update_wiki_page(wiki_project$id, wiki_project$wikiId, clean_markdown)
+}
+
+# Process metadata files with templates
+process_metadata_file <- function(file_id, template_path, download_path, output_path, file_name) {
+  data <- download_and_read_data(file_id, download_path)
+  template <- read_xlsx(template_path) %>% as_tibble()
+  data_edit <- data %>%
+    select(any_of(names(template))) %>%
+    bind_cols(template %>% select(-any_of(names(data))))
+  write_csv(data_edit, file.path(output_path, paste0(file_name, "_EDIT.csv")))
+}
+
+# Execute defined tasks based on configuration
+execute_study_tasks <- function(config) {
+  tasks <- list(
+    list("Download Metadata", TRUE, function() {
+      download_synapse_files(config$study$metadata, config$study$name)
+    }),
+    list("Move Folders", config$study$existing, function() {
+      move_folders_to_parent(config$study$data, config$study$ids$syn)
+    }),
+    list("Convert DOCX to Markdown", FALSE, function() {
+      convert_docx_to_markdown("Jax.IU.Pitt_5XFAD_Deep_Phenotyping_FINAL.docx")
+    }),
+    list("Rename Directories", FALSE, function() {
+      rename_data_directories(config$study$data, config$study$name)
+    })
+  )
+  lapply(tasks, function(task) execute_task(task[[1]], task[[2]], task[[3]]))
+}
+
+# Execute task if the flag is set to TRUE
+execute_task <- function(task_name, flag, action) {
+  if (flag) action() else cat("Skipped:", task_name, "\n")
+}
+
+# Function to perform left join and handle duplicate columns
+left_join_no_dup <- function(x, y, by) {
+  common_columns <- setdiff(intersect(names(x), names(y)), by)
+  if (length(common_columns) > 0) {
+    x <- x %>% rename_with(~ paste0(., ".x"), all_of(common_columns))
+    y <- y %>% rename_with(~ paste0(., ".y"), all_of(common_columns))
+    result <- left_join(x, y, by = by)
+    for (col in common_columns) {
+      result[[col]] <- coalesce(result[[paste0(col, ".x")]], result[[paste0(col, ".y")]])
+      result <- result %>% select(-all_of(paste0(col, c(".x", ".y"))))
+    }
+  } else {
+    result <- left_join(x, y, by = by)
+  }
+  result
+}
