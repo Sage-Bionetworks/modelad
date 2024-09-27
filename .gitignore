@@ -22,6 +22,7 @@ dist/
 .ssh/
 .config/
 .synapseConfig
+.idea
 
 # Temporary & Backup
 tmp/
