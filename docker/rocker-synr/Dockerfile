@@ -12,9 +12,7 @@ RUN apt-get clean all && \
 RUN pip3 install synapseclient
 
 USER rstudio
-RUN Rscript -e 'install.packages("reticulate")'
-RUN Rscript -e 'install.packages("rjson")'
-RUN Rscript -e 'install.packages("janitor")'
-RUN Rscript -e 'install.packages("synapser", repos ="http://staging-ran.synapse.org")'
-RUN Rscript -e 'install.packages("synapserutils", repos ="http://staging-ran.synapse.org")'
+RUN Rscript -e 'install.packages(c("reticulate", "remotes", "janitor"))'
+RUN remotes::install_version("rjson", version = "0.2.21", repos = "http://cran.us.r-project.org")
+RUN Rscript -e 'install.packages(c("synapser", "synapserutils"), repos ="http://ran.synapse.org")'
 USER root
