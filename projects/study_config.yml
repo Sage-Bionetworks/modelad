@@ -1,0 +1,27 @@
+# study_config_template.yml
+
+# Study Configuration Template
+
+# Study Metadata
+name: "Study_Name"
+synapseID: "synXXXXXXX"
+stagingID: "synYYYYYYY"
+project: "Project_Name"
+program: "MODEL-AD"
+
+# Specimen Information
+species: "Species_Used"
+specimens:                                
+  types: ["Specimen_Type1", "Specimen_Type2"]  # List of specimen types, e.g., ["brain", "blood"]
+
+# Metadata
+metadata:
+  individual: "Individual_Metadata_ID"    # Synapse ID or identifier for individual-level metadata
+  biospecimen: "Biospecimen_Metadata_ID"  # Synapse ID or identifier for biospecimen-level metadata
+
+# Assays and Data Types
+assays:
+  Assay_Name:                             # Name of the assay, e.g., "RNASeq"
+    raw: "Raw_Data_ID"                    # Synapse ID for raw data associated with this assay
+    processed: "Processed_Data_ID"        # Synapse ID for processed data associated with this assay
+    meta: "Metadata_ID"                   # Synapse ID for metadata associated with this assay
