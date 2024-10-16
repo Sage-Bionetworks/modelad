@@ -16,4 +16,4 @@ The MODEL-AD project aims to cure Alzheimer's disease. This repository contains 
 	+ https://www.alzforum.org/news/conference-coverage/model-ad-probably-has-something-you
 
 **Curation**
- - Metadata Updates https://github.com/Sage-Bionetworks/modelad/docs/MODEL-AD_metadata_updates.md
+ - Metadata Updates [https://github.com/Sage-Bionetworks/modelad/docs/MODEL-AD_metadata_updates.md](https://github.com/Sage-Bionetworks/modelad/blob/main/docs/MODEL-AD_metadata_updates.md)
