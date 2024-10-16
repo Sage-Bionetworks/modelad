@@ -14,16 +14,17 @@ For each study, please:
   - [Contribute Data to MODEL-AD: A Step-by-Step Guide](https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2573402701/Contribute+Data+to+MODEL-AD+A+Step-by-Step+Guide)
   - [Mouse Naming Standards](https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2125201409/Mouse+Naming+Standards)
   - Please inform us of any inconsistencies or issues with the approved values so we can ensure consistency across studies.
-4. Validate your metadata with the Data Curator App (DCA). This may require a few iterations to address any issues.
+4. Download tempaltes from the Data Curator App (DCA). 
   - To access the templates for your studies:
     - Go to [DCA](https://dca.app.sagebionetworks.org/)
     - Select DCC > **AD Knowledge Portal**
     - Select Project > **AD Knowledge Portal - Backend**
     - Select Folder > Jax.IU.Pitt_LOAD2 (for example)
-    - Select the template to download
-    - Complete the template with the latest revision of your study metadata
-    - Submit the metadata for validation
-    - Resolve any issues so that the metadata complies with the data model
+    - Select the template to download (eg, individual animal MODEL-AD, biospecimen, etc.)
+5. Populate the template with the latest updates of your study metadata
+6. Validate your metadata with the Data Curator App (DCA)
+7. If needed, resolve any issues so that the metadata complies with the data model. This may require a few iterations to address any issues.
+8. Please us know if you have any issues with these steps.
 
 ---
 
@@ -37,7 +38,7 @@ For each study, please:
 
 #### **Minor Issues**  
 - "Sex" column has entries like "female " (with an extra space).
-
+  - **AD-DCC - Fix**
 ---
 
 ### **2. Jax.IU.Pitt_APOE4.Trem2.R47H**  
@@ -69,6 +70,7 @@ For each study, please:
 
 - **[Biospecimen Metadata: syn23532198](https://www.synapse.org/#!Synapse:syn23532198)**  
   - 15 empty columns at the end of the biospecimen metadata.
+  - **AD-DCC - Fix**
 
 ---
 
@@ -95,6 +97,7 @@ For each study, please:
 
 #### **Minor Issues**  
 - RNAseq assay metadata contains 17 blank columns.
+- **AD-DCC - Fix**
 
 ---
 
@@ -126,6 +129,7 @@ For each study, please:
 
 #### **Minor Issues**  
 - One extra blank column in RNAseq metadata.
+- **AD-DCC - Fix**
 
 ---
 
@@ -139,3 +143,4 @@ For each study, please:
 - RNAseq metadata contains incorrect "platform" entries ("NextSeq501", "NextSeq502", etc., should be "NextSeq500").  
 - Genotypes in individual metadata don't conform to approved values (e.g., "B6N;B6J" should be "C57BL6J:C57BL6N").  
 - Genotype background "C57BL/6N tac/B6" doesn't match approved values.
+- **AD-DCC - Fix**
