@@ -2,7 +2,7 @@
 
 This document outlines specific metadata updates **needed** from contributors.  
 
-For more detail, see Jaclyn Beck's Sumamry RNA Sequencing issues: [RNAseq_metadata_issues](RNAseq_metadata_issues.md)
+For more detail, see Jaclyn Beck's summary of RNA Sequencing issues: [RNAseq_metadata_issues](RNAseq_metadata_issues.md)
 
 **Task Summary**
 
