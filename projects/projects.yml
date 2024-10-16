@@ -1,0 +1,96 @@
+projects:
+  - name: "UCI"
+    program: "MODEL-AD"
+    investigators: ["LaFerla", "Tenner", "Green"]
+    url: "https://adknowledgeportal.synapse.org/Explore/Projects/DetailsPage?Grant%20Number=U54AG054349"
+    grant: "U54AG054349"
+    studies:
+      - name: "3xTg-AD"
+        synapseID: "syn22964685"
+        
+      - name: "5XFAD"
+        synapseID: "syn16798076"
+        
+      - name: "ABCA7"
+        synapseID: "syn27207345"
+        
+      - name: "ABI3"
+        synapseID: "syn26943727"
+        
+      - name: "Apoe_Christchurch"
+        synapseID: "syn61250684"
+        
+      - name: "Bin1K358R"
+        synapseID: "syn50944316"
+        
+      - name: "CCLines"
+        synapseID: "syn51713891"
+        
+      - name: "hAbeta_KI"
+        synapseID: "syn18634479"
+        
+      - name: "Microbiome"
+        synapseID: "syn22341542"
+        
+      - name: "PrimaryScreen"
+        synapseID: "syn25316706"
+        
+      - name: "Trem2-R47H_NSS"
+        synapseID: "syn26943950"
+        
+      - name: "Trem2_Cuprizone"
+        synapseID: "syn50670633"
+
+  - name: "Jax.IU.Pitt"
+    program: "MODEL-AD"
+    investigators: ["Lamb", "Rizzo", "Carter", "Howell", "Territo"]
+    url: "https://adknowledgeportal.synapse.org/Explore/Projects/DetailsPage?Grant%20Number=U54AG054345"
+    grant: "U54AG054345"
+    studies:
+      - name: "5XFAD"
+        synapseID: "syn21983020"
+        
+      - name: "APP.PS1"
+        synapseID: "syn9850001"
+        
+      - name: "APOE4.Trem2.R47H"
+        synapseID: "syn17095980"
+        
+      - name: "Levetiracetam_5XFAD"
+        synapseID: "syn21784897"
+        
+      - name: "LOAD1.PrimaryScreen"
+        synapseID: "syn21595258"
+        
+      - name: "LOAD2"
+        synapseID: "syn51534997"
+        
+      - name: "LOAD2.PrimaryScreen"
+        synapseID: "syn58863147"
+        
+      - name: "MicrobiomePilot"
+        synapseID: "syn22341543"
+        
+      - name: "Proteomics_Metabolomics_Pilot"
+        synapseID: "syn22313528"
+        
+      - name: "Rat_TgF344-AD"
+        synapseID: "syn20730014"
+        
+      - name: "StrainValidation"
+        synapseID: "syn21595255"
+        
+      - name: "Verubecestat_5XFAD"
+        synapseID: "syn21863375"
+        
+      - name: "hTau_Trem2"
+        synapseID: "syn18693211"
+
+  - name: "MODEL_AD"
+    program: "MODEL-AD"
+    studies:
+      - name: "JAX_GWAS_Gene_Survey"
+        synapseID: "syn15811463"
+        
+      - name: "Staging"
+        synapseID: "syn61377081"
