@@ -1,0 +1,41 @@
+# Synapse Information
+study:
+  name: "JAX.IU.PITT_Verubecestat_5XFAD"
+  adelID: "ADEL-31"
+  admID: "ADM-119"
+  studyID: "syn21863375"
+  stagingID: "syn23628033"
+  viewID: "syn61586472"
+  portal: "AMP-AD"
+  program: "MODEL-AD"
+  liaison: "Catrina Spruce"
+  liaisonEmail: "catrina.spruce@jax.org"
+  metadata:
+    general: "syn21863391"
+    individual: "syn22251788"
+    biospecimen: "syn26136407"
+  assays:
+    autoradiography:
+      metadata: "syn22251789"
+      data: "syn22251793"
+    behavior:
+      metadata: "synXXXXX"
+      data: "syn23628042"
+    geneExpressionMRNA:
+      metadata: "synXXXXX"
+      data: "syn51106299"
+    immunoassay:
+      metadata: "syn26136405"
+      data: "syn26129018"
+    pharmacokinetic:
+      metadata: "synXXXXX"
+      data: "syn21863392"
+    PET:
+      metadata: "syn22251786"
+      data: "syn22251792"
+    proteomics:
+      metadata: "syn52360061"
+      data: "syn52805920"
+
+# Study Information
+existing: "False"

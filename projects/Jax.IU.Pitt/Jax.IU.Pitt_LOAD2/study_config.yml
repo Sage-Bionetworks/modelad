@@ -1,0 +1,57 @@
+study:
+  name: "Jax.IU.Pitt_LOAD2"
+  ids:
+    adel: "https://sagebionetworks.jira.com/browse/ADEL-49"
+    adm: "https://sagebionetworks.jira.com/browse/ADM-118"
+    synapse:
+      main: "syn51534997"
+      staging: "syn51535045"
+  existing: false
+  
+  info:
+    grant: "U54AG054345"
+    portal: "ADKP"
+    program: "MODEL-AD"
+    focus: "Gene Expression"
+    principal_investigator: "Bruce Lamb"
+    funding_agency: "NIA"
+
+  institution:
+    name: "Indiana University School of Medicine"
+    contact: "catrina.spruce@jax.org"
+
+  specimens:
+    species: "Mouse"
+    types:
+      - "Brain"
+      - "Blood"
+
+  metadata:
+    general: "syn51745755"
+    individual: "syn34228037"
+    biospecimen: "syn34228034"
+    id_key: "syn51441046"
+    
+    data_types:
+      RNASeq:
+        description: "RNA Sequencing"
+        file: "syn51708695"
+      TMT_quantitation:
+        description: "TMT Quantitation"
+        file: "syn62012514"
+      immunoassay:
+        description: "Immunoassay"
+        file: "syn62012516"
+      metabolomics:
+        description: "Metabolomics"
+        file: "syn62012515"
+
+  data:
+    behavioral: "syn51745788"
+    RNASeq:
+      raw: "syn51748057"
+      processed: "syn51748058"
+    imaging: "syn53360242"
+    immunoassay: "syn51904331"
+    metabolomics: "syn51748055"
+    proteomics: "syn51745781"

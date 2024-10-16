@@ -1,0 +1,737 @@
+﻿individualID,specimenID,specimenIdSource,organ,tissue,BrodmannArea,sampleStatus,tissueWeight,tissueVolume,nucleicAcidSource,cellType,fastingState,isPostMortem,samplingAge,samplingAgeUnits,visitNumber,assay
+9733,9733lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9732,9732lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9731,9731lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9729,9729lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9728,9728lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9723,9723lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9721,9721lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9720,9720lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9715,9715lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9713,9713lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9712,9712lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9704,9704lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9702,9702lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9701,9701lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9700,9700lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9699,9699lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9698,9698lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9697,9697lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9635,9635lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9634,9634lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9633,9633lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9631,9631lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20554,TMF20554lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20556,TMF20556lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20557,TMF20557lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20558,TMF20558lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20559,TMF20559lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20587,TMF20587lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20588,TMF20588lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20589,TMF20589lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20590,TMF20590lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20591,TMF20591lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20592,TMF20592lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20593,TMF20593lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20594,TMF20594lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20682,TMF20682lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20723,TMF20723lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20724,TMF20724lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20725,TMF20725lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20726,TMF20726lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20728,TMF20728lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20729,TMF20729lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20736,TMF20736lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20738,TMF20738lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+TMF20776,TMF20776lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,4,,,rnaSeq
+9379,9379lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9380,9380lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9383,9383lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9384,9384lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9385,9385lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9386,9386lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9388,9388lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9477,9477lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9660,9660lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9761,9761lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10042,10042lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10043,10043lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10096,10096lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10097,10097lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10098,10098lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10099,10099lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10100,10100lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7119,7119lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7120,7120lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7121,7121lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7134,7134lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7547,7547lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7548,7548lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7549,7549lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7580,7580lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7715,7715lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7764,7764lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7772,7772lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7939,7939lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+8041,8041lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+8062,8062lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+8123,8123lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+8350,8350lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9639,9639lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9476,9476lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+10041,10041lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7683,7683lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7987,7987lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+8393,8393lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+7684,7684lh,UCI_TMF,brain,hippocampus,,frozen,,,bulk cell,,,TRUE,12,,,rnaSeq
+9730,9730lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9719,9719rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9719,9719lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9717,9717rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9717,9717lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9716,9716rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9716,9716lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9714,9714rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9714,9714lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9708,9708rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9708,9708lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9706,9706rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9706,9706lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9473,9473rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9473,9473lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9726,9726rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9726,9726lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9725,9725rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9725,9725lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9724,9724rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9724,9724lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9718,9718rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9718,9718lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9711,9711rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9710,9710rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9710,9710lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9709,9709rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9709,9709lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9707,9707rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9707,9707lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9705,9705rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9705,9705lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9474,9474rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+9474,9474lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+10351,10351rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+10351,10351lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+10352,10352rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+10352,10352lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15510,15510rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15510,15510lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15515,15515rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15515,15515lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15520,15520rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15520,15520lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15519,15519rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+15519,15519lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,LTP
+12287,12287rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12287,12287lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12212,12212rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12212,12212lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12211,12211rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12211,12211lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12209,12209rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12209,12209lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12208,12208rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12208,12208lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12207,12207rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12207,12207lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12206,12206rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12149,12149rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12149,12149lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12148,12148rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12148,12148lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12143,12143rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12143,12143lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12142,12142rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12142,12142lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12141,12141rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12141,12141lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12140,12140rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12140,12140lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12139,12139rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12139,12139lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12138,12138rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12138,12138lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12136,12136rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12136,12136lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12135,12135rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12135,12135lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12134,12134rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12134,12134lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12133,12133rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12133,12133lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12091,12091rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12091,12091lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12090,12090rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12090,12090lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12089,12089rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12089,12089lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12088,12088rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12088,12088lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12087,12087rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12087,12087lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12086,12086rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12086,12086lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12085,12085rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12085,12085lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12084,12084rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12084,12084lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12083,12083rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12083,12083lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12082,12082rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12082,12082lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12076,12076rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12076,12076lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12075,12075rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12075,12075lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12074,12074lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12073,12073rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12073,12073lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12070,12070rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12070,12070lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12069,12069rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12069,12069lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12068,12068rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12068,12068lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12067,12067rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12067,12067lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12066,12066rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+12066,12066lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+11929,11929rh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+11929,11929lh,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,LTP
+7119,7119lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7120,7120lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7121,7121lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7134,7134lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7548,7548lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7549,7549lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7580,7580lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7683,7683lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7684,7684lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7715,7715lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7764,7764lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7772,7772lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7939,7939lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7987,7987lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7988,7988lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7547,7547lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8041,8041lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8062,8062lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8123,8123lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8350,8350lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8382,8382lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8392,8392lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8393,8393lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9379,9379lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9380,9380lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9382,9382lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9383,9383lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9384,9384lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9385,9385lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9386,9386lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9387,9387lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9388,9388lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9476,9476lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9477,9477lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9631,9631lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9633,9633lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9634,9634lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9635,9635lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9660,9660lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9697,9697lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9698,9698lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9699,9699lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9700,9700lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9701,9701lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9702,9702lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9704,9704lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9712,9712lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9713,9713lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9715,9715lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9720,9720lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9721,9721lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9723,9723lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9728,9728lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9729,9729lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9731,9731lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9732,9732lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9733,9733lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9761,9761lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10040,10040lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10041,10041lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10042,10042lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10043,10043lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10096,10096lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10097,10097lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10098,10098lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10099,10099lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10100,10100lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+TMF20554,TMF20554lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20556,TMF20556lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20557,TMF20557lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20558,TMF20558lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20559,TMF20559lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20587,TMF20587lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20588,TMF20588lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20589,TMF20589lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20590,TMF20590lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20591,TMF20591lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20592,TMF20592lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20593,TMF20593lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20594,TMF20594lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20682,TMF20682lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20723,TMF20723lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20724,TMF20724lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20725,TMF20725lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20726,TMF20726lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20728,TMF20728lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20729,TMF20729lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20736,TMF20736lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20738,TMF20738lc,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+7548,7548p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7549,7549p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7580,7580p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7683,7683p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7684,7684p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7715,7715p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7764,7764p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7772,7772p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7939,7939p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7987,7987p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+7988,7988p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8041,8041p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8062,8062p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8123,8123p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8350,8350p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8382,8382p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8392,8392p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+8393,8393p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9379,9379p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9380,9380p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9382,9382p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9383,9383p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9384,9384p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9385,9385p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9386,9386p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9387,9387p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9388,9388p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9476,9476p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9477,9477p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9631,9631p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9633,9633p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9634,9634p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9635,9635p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9660,9660p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+9697,9697p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9698,9698p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9699,9699p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9700,9700p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9701,9701p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9702,9702p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9704,9704p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9712,9712p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9713,9713p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9715,9715p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9720,9720p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9721,9721p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9728,9728p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9729,9729p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9731,9731p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9733,9733p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9761,9761p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10040,10040p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10041,10041p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10042,10042p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10043,10043p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10096,10096p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10097,10097p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10098,10098p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10099,10099p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+10100,10100p,UCI_TMF,blood,plasma,,,,,,,,TRUE,12,,,ELISA
+TMF20556,TMF20556p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20558,TMF20558p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20587,TMF20587p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20590,TMF20590p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20591,TMF20591p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20592,TMF20592p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20724,TMF20724p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20725,TMF20725p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20734,TMF20734p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20557,TMF20557p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20559,TMF20559p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20588,TMF20588p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20682,TMF20682p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20723,TMF20723p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20726,TMF20726p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20728,TMF20728p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20729,TMF20729p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+TMF20738,TMF20738p,UCI_TMF,blood,plasma,,,,,,,,TRUE,4,,,ELISA
+9733,9733lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9701,9701lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9635,9635lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9634,9634lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9633,9633lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9631,9631lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9732,9732lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9729,9729lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9728,9728lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9721,9721lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9720,9720lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20556,TMF20556lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20558,TMF20558lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20587,TMF20587lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20589,TMF20589lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20590,TMF20590lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20591,TMF20591lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20592,TMF20592lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20594,TMF20594lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20724,TMF20724lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20725,TMF20725lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9733,9733lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9701,9701lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9635,9635lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9634,9634lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9633,9633lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9631,9631lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9732,9732lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9729,9729lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9728,9728lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9721,9721lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9720,9720lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20556,TMF20556lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20558,TMF20558lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20587,TMF20587lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20589,TMF20589lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20590,TMF20590lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20591,TMF20591lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20592,TMF20592lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20594,TMF20594lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20724,TMF20724lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20725,TMF20725lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9733,9733lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9701,9701lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9635,9635lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9634,9634lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9633,9633lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9631,9631lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9732,9732lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9729,9729lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9728,9728lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9721,9721lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9720,9720lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20556,TMF20556lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20558,TMF20558lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20587,TMF20587lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20589,TMF20589lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20590,TMF20590lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20591,TMF20591lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20592,TMF20592lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20594,TMF20594lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20724,TMF20724lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+TMF20725,TMF20725lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,4,,,ELISA
+9733,9733lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9701,9701lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9635,9635lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9634,9634lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9633,9633lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9631,9631lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9732,9732lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9729,9729lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9728,9728lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9721,9721lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+9720,9720lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20556,TMF20556lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20558,TMF20558lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20587,TMF20587lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20589,TMF20589lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20590,TMF20590lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20591,TMF20591lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20592,TMF20592lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20594,TMF20594lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20724,TMF20724lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+TMF20725,TMF20725lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,4,,,ELISA
+7120,7120lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7120,7120lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7134,7134lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7134,7134lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7547,7547lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7547,7547lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7548,7548lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7548,7548lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7683,7683lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7683,7683lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7715,7715lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7715,7715lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7764,7764lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7764,7764lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7939,7939lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7939,7939lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7987,7987lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7987,7987lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8393,8393lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+8393,8393lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9379,9379lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9379,9379lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9383,9383lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9383,9383lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9385,9385lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9385,9385lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9388,9388lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9388,9388lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9639,9639lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9639,9639lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9660,9660lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9660,9660lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9761,9761lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9761,9761lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10042,10042lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+10042,10042lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10043,10043lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+10043,10043lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10097,10097lhif,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+10097,10097lcif,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9761,9761lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9660,9660lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+10097,10097lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+10043,10043lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+10042,10042lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9388,9388lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9385,9385lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9383,9383lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9379,9379lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9387,9387lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7120,7120lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7134,7134lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7764,7764lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7987,7987lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+8393,8393lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7548,7548lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7547,7547lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7683,7683lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7715,7715lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+7939,7939lhsf,UCI_TMF,brain,hippocampus,,,,,,,,TRUE,12,,,ELISA
+9761,9761lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9660,9660lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10097,10097lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10043,10043lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+10042,10042lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9388,9388lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9385,9385lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9383,9383lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9379,9379lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+9387,9387lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7120,7120lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7134,7134lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7764,7764lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7987,7987lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+8393,8393lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7548,7548lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7547,7547lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7683,7683lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7715,7715lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+7939,7939lcsf,UCI_TMF,brain,cerebral cortex,,,,,,,,TRUE,12,,,ELISA
+TMF20591,Pool-A,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20592,Pool-A,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20594,Pool-A,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20724,Pool-A,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20725,Pool-A,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20734,Pool-A,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20556,Pool-B,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20558,Pool-B,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20587,Pool-B,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20589,Pool-B,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20590,Pool-B,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9732,Pool-C,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9729,Pool-C,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9728,Pool-C,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9721,Pool-C,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9720,Pool-C,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9733,Pool-D,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9701,Pool-D,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9635,Pool-D,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9634,Pool-D,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9633,Pool-D,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9631,Pool-D,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20593,Pool-E,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20682,Pool-E,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20723,Pool-E,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20726,Pool-E,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20729,Pool-E,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20736,Pool-E,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20554,Pool-F,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20557,Pool-F,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20559,Pool-F,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20588,Pool-F,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20728,Pool-F,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9731,Pool-G,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9723,Pool-G,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9715,Pool-G,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9713,Pool-G,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9712,Pool-G,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9704,Pool-H,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9702,Pool-H,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9700,Pool-H,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9699,Pool-H,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9698,Pool-H,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9697,Pool-H,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9736,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9639,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9388,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9387,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9385,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9383,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9381,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9379,Pool-I,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10097,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10043,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10042,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9761,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9660,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9658,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9636,Pool-J,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7548,Pool-K,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7547,Pool-K,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7683,Pool-K,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7715,Pool-K,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7939,Pool-K,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7988,Pool-K,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7120,Pool-L,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7134,Pool-L,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7764,Pool-L,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7987,Pool-L,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8393,Pool-L,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8392,Pool-L,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7549,Pool-M,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7580,Pool-M,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7684,Pool-M,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8062,Pool-M,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8123,Pool-M,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7121,Pool-N,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7119,Pool-N,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7772,Pool-N,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8041,Pool-N,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8350,Pool-N,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8382,Pool-N,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9640,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9638,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9477,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9476,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9386,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9384,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9382,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9380,Pool-O,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10100,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10099,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10098,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10096,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10041,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10040,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9727,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9659,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9632,Pool-P,UCI_TMF,brain,cerebral cortex,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+TMF20591,Pool-Q,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20592,Pool-Q,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20594,Pool-Q,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20724,Pool-Q,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20725,Pool-Q,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20734,Pool-Q,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20556,Pool-R,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20558,Pool-R,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20587,Pool-R,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20589,Pool-R,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20590,Pool-R,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9732,Pool-S,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9729,Pool-S,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9728,Pool-S,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9721,Pool-S,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9720,Pool-S,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9733,Pool-T,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9701,Pool-T,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9635,Pool-T,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9634,Pool-T,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9633,Pool-T,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9631,Pool-T,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20593,Pool-U,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20682,Pool-U,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20723,Pool-U,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20726,Pool-U,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20729,Pool-U,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20736,Pool-U,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20554,Pool-V,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20557,Pool-V,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20559,Pool-V,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20588,Pool-V,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+TMF20728,Pool-V,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9731,Pool-W,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9723,Pool-W,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9715,Pool-W,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9713,Pool-W,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9712,Pool-W,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9704,Pool-X,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9702,Pool-X,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9700,Pool-X,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9699,Pool-X,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9698,Pool-X,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9697,Pool-X,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,4,,,immunofluorescence
+9736,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9639,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9388,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9387,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9385,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9383,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9381,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9379,Pool-Y,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10097,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10043,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10042,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9761,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9660,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9658,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9636,Pool-Z,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7548,Pool-AA,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7547,Pool-AA,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7683,Pool-AA,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7715,Pool-AA,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7939,Pool-AA,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7988,Pool-AA,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7120,Pool-AB,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7134,Pool-AB,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7764,Pool-AB,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7987,Pool-AB,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8393,Pool-AB,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8392,Pool-AB,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7549,Pool-AC,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7580,Pool-AC,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7684,Pool-AC,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8062,Pool-AC,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8123,Pool-AC,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7121,Pool-AD,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7119,Pool-AD,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+7772,Pool-AD,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8041,Pool-AD,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8350,Pool-AD,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+8382,Pool-AD,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9640,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9638,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9477,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9476,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9386,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9384,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9382,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9380,Pool-AE,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10100,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10099,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10098,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10096,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10041,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+10040,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9727,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9659,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence
+9632,Pool-AF,UCI_TMF,brain,hippocampus,,formalin-fixed,,,,,,TRUE,12,,,immunofluorescence

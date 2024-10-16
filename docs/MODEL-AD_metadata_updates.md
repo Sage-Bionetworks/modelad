@@ -1,6 +1,6 @@
-## MODEL-AD RNA Sequencing Metadata Updates
+## MODEL-AD RNA Sequencing Metadata Update Process
 
-This document outlines specific metadata updates **needed** from contributors.  
+This document provides a structured guide for contributors to update metadata for specific studies, ensuring alignment with approved standards.
 
 For more detail, see Jaclyn Beck's summary of RNA Sequencing issues: [RNAseq_metadata_issues](RNAseq_metadata_issues.md)
 
@@ -8,14 +8,13 @@ For more detail, see Jaclyn Beck's summary of RNA Sequencing issues: [RNAseq_met
 
 For each study, please:
 
-1. Review the relevant sections for your study.
+1. Review the study-specific sections below.
 2. Update your metadata, focusing on the specific IDs and details mentioned.
 3. Ensure your updates align with the approved values listed in the metadata template and MODEL-AD documentation:
   - [Contribute Data to MODEL-AD: A Step-by-Step Guide](https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2573402701/Contribute+Data+to+MODEL-AD+A+Step-by-Step+Guide)
   - [Mouse Naming Standards](https://sagebionetworks.jira.com/wiki/spaces/MOD/pages/2125201409/Mouse+Naming+Standards)
-  - Please inform us of any inconsistencies or issues with the approved values so we can ensure consistency across studies.
-4. Download tempaltes from the Data Curator App (DCA). 
-  - To access the templates for your studies:
+  - Report any issues or challenges!
+4. Download templates from the Data Curator App (DCA). 
     - Go to [DCA](https://dca.app.sagebionetworks.org/)
     - Select DCC > **AD Knowledge Portal**
     - Select Project > **AD Knowledge Portal - Backend**
@@ -37,8 +36,9 @@ For each study, please:
 - Individuals (e.g., 289904014, 289973785) have "dateDeath" earlier than "dateBirth".
 
 #### **Minor Issues**  
-- "Sex" column has entries like "female " (with an extra space).
-  - **AD-DCC - Fix**
+- Extra spaces in "Sex" column entries (e.g., "female ").
+  - **AD-DCC - Fix **
+  - Verified no extra spaces in annotations, but in CSV
 ---
 
 ### **2. Jax.IU.Pitt_APOE4.Trem2.R47H**  

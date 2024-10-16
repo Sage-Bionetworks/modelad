@@ -1,0 +1,19 @@
+# Study Metadata
+name: "Jax.IU.Pitt_5XFAD"
+synapseID: "syn21983020"
+stagingID: "syn22332279"
+project: "Jax.IU.Pitt"
+program: "MODEL-AD"
+
+# Metadata
+metadata:
+  individual: "syn22103212"
+  biospecimen: "syn22103213"
+  rnaseq: "syn22110328"
+  pet: "syn22094732"
+  autorad: "syn22094731"
+
+# Assays and Data Types
+assays:
+  rnaseq:
+    raw: "Raw_Data_ID"

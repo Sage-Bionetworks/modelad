@@ -27,21 +27,76 @@ extract_synapse_ids <- function(data_section) {
 }
 
 # Create and store a Synapse file view schema
-create_file_view_schema <- function(study_name, parent_id, scopes, columns = NULL) {
+create_file_view_schema <- function(study_name, parent_id, scopes) {
   schema <- EntityViewSchema(
     name = study_name,
     parent = parent_id,
     scopes = scopes,
     includeEntityTypes = c(EntityViewType$FILE),
     addDefaultViewColumns = TRUE,
-    addAnnotationColumns = TRUE,
-    columns = columns
+    addAnnotationColumns = TRUE
   )
-  synStore(schema)$properties$id
+
+  # Attempt to store the schema and return the schema ID, handling errors
+  schema_id <- tryCatch(
+    {
+      synStore(schema)$properties$id
+    },
+    error = function(e) {
+      cat("Error creating file view for", study_name, ":", e$message, "\n")
+      return(NULL)
+    }
+  )
+
+  # Exit if the schema creation failed
+  if (is.null(schema_id)) {
+    return(NULL)
+  }
+
+  # Retrieve and check columns for duplicates
+  columns_list <- tryCatch(as.list(synGetColumns(schema_id)),
+    error = function(e) {
+      cat("Error retrieving columns for", study_name, ":", e$message, "\n")
+      return(NULL)
+    }
+  )
+
+  if (is.null(columns_list)) {
+    return(NULL)
+  }
+
+  # Handle duplicates if found
+  if (anyDuplicated(sapply(columns_list, `[[`, "name"))) {
+    cat("Duplicate columns found in", study_name, "- Adjusting schema...\n")
+
+    unique_columns <- columns_list[!duplicated(sapply(columns_list, `[[`, "name"))]
+    schema <- EntityViewSchema(
+      name = study_name,
+      parent = parent_id,
+      scopes = scopes,
+      includeEntityTypes = c(EntityViewType$FILE),
+      addDefaultViewColumns = FALSE,
+      addAnnotationColumns = FALSE,
+      columns = unique_columns
+    )
+
+    schema_id <- tryCatch(
+      {
+        synStore(schema)$properties$id
+      },
+      error = function(e) {
+        cat("Error storing adjusted schema for", study_name, ":", e$message, "\n")
+        return(NULL)
+      }
+    )
+  }
+
+  return(schema_id)
 }
 
+
 # Query file view content and return as a tibble
-query_file_view_to_tibble <- function(fileview_id) {
+query_to_tibble <- function(fileview_id) {
   synTableQuery(paste("SELECT * FROM", fileview_id))$asDataFrame() %>% as_tibble()
 }
 
